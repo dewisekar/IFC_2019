@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <!-- Nucleo Icons -->
   <link href="./blk/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
@@ -25,7 +26,7 @@
 
 <body class="index-page">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top  navbar-transparent">
+  <nav class="navbar navbar-expand-lg fixed-top  navbar-transparent" color-on-scroll="100" style="background-color: #295B65;">
       <div class="container">
           <div class="navbar-translate">                
               <a class="navbar-brand" href="../">
@@ -37,12 +38,12 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
           </div>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <div class="collapse navbar-collapse justify-content-end" id="navigation" style="background-color: #295B65;">
               <div class="navbar-collapse-header">
                   <div class="row">
                       <div class="col-6 collapse-brand">
                           <a>
-                              BLK•
+                              <img src="../img/logoIFC3.png" width="60%">
                           </a>
                       </div>
                       <div class="col-6 collapse-close text-right">
@@ -89,7 +90,7 @@
                 <div class="pt-3 pb-3 mt-0 mb-0">
                     <img src="../img/logoIFC3.png" class="mt-0" style="width:120%; height:auto;">
                 </div>                    
-                <h3 class="mb-3" style="font-family: 'Roboto', sans-serif;">TAKE IT TO THE NEXT LEVEL!</h3>
+                <h3 class="mb-3"  style="font-family: 'Acme', sans-serif;">TAKE IT TO THE NEXT LEVEL!</h3>
                 <style>
                   #btn1{
                     background-image: url("../img/btn1.png");
@@ -123,11 +124,11 @@
                 }
               </style>
               <img src="../img/logoUKM.png" width="20%" id="logoukm">
-              <h3>UKM Sepakbola ITS Presents:</h3>
+              <h3  style="font-family: 'Acme', sans-serif;">UKM Sepakbola ITS Presents:</h3>
             </div>
             <div class="row justify-content-between align-items-center">
               <div class="col-lg-5 mb-5 mb-lg-0 " data-aos="flip-left">
-                  <h1 class="text-white font-weight-light">ITS Futsal Championship 2019</h1>
+                  <h1 class="text-white font-weight-light" >ITS Futsal Championship 2019</h1>
                   <p class="text-white mt-4">IFC merupakan salah satu event dari UKM Sepakbola ITS dan kompetisi futsal antar departemen di ITS. IFC diikuti oleh 32 tim putra dan 16 tim putri dari departemen-departemen di iTS pada tahun 2017 dan 2018. Tahun 2019 merupakan tahun kesepuluh IFC diadakan. Jangan lupa untuk siapkan tim terbaikmu agar tidak ketinggalan event futsal terbesar tahunan di ITS!</p>   
               </div>
               <div class="col-lg-6" data-aos="flip-right">
@@ -183,23 +184,135 @@
       <div class="section pt-0">
         <div class="container" id="persyaratan">
           <div class="row">
-            <div class="col-md-12 text-center mb-4">
-              <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:50px;"></i>
-              <h1 class="text-center mt-2">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h1>
-            </div>  
-            <div class="col-md-6 text-center">
-              <i class="tim-icons icon-single-02 text-center" style="color:white; font-size:50px;"></i>
-              <h1 class="mt-2 mb-1">Kuota</h1>
-              <h4 style="font-family: 'Roboto', sans-serif;" class="mb-0">Putra 32 tim</h4>
-              <h4 style="font-family: 'Roboto', sans-serif;">Putri 16 tim*</h4>
-              <p style="color:white; font-family: 'Roboto', sans-serif;">*: Penambahan kuota bisa terjadi tergantung dengan antusiasme pendaftar</p>
+            <div class="col-md-12  mb-4 mt-0">
+              <h1 class="text-center" style="font-family: 'Acme', sans-serif; font-size:40px;">COMPETITIONS</h1>
+              <div style="border-bottom: 2px solid white; display: inline-block;">
+                  <h2 class="text-left mb-1" style="">Futsal Championship</h2>
+              </div>
+            </div> 
+            <style>
+              @media screen and (min-width: 768px) {
+                #syarat {
+                  border-left: 2px solid white;
+                }
+                #syarat1 {
+                  border-right: 2px solid white;
+                }
+              }
+            </style> 
+            <div class="col-md-6 text-left pt-3" id="syarat1">
+              <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
+              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h4>
+              
+              <i class="tim-icons icon-single-02 text-center" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Kuota</h1>
+              <h4 class="mb-0">Putra 32 tim</h4>
+              <h4>Putri 16 tim*</h4>
+              <p style="color:white;">*: Penambahan kuota bisa terjadi tergantung dengan antusiasme pendaftar</p>
+              
+              <i class="tim-icons icon-calendar-60 text-center mt-3" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Pelaksanaan</h1>
+              <h4  class="mb-2">11 Maret - 18 April 2019</h4>
+
+              <i class="tim-icons icon-money-coins text-center mt-3" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Biaya Pendaftaran</h1>
+              <h4 class="mb-0">Putra 32 tim</h4>
+              <h4>Putri 16 tim*</h4>
             </div>
-            <div class="col-md-6 text-center">
-              <i class="tim-icons icon-calendar-60 text-center" style="color:white; font-size:50px;"></i>
-              <h1 class="mt-2 mb-1">Pelaksanaan</h1>
-              <h4 style="font-family: 'Roboto', sans-serif;" class="mb-0">11 Maret - 18 April 2019</h4>
-            </div>               
-          </div>
+            <div class="col-md-6 text-right" id="syarat">
+                <i class="tim-icons icon-single-copy-04 text-center mt-3" style="color:white; font-size:40px;"></i>
+                <h1 class="mt-2 mb-1" style="font-size:25px;">Persyaratan</h1>
+                <p class="mt-2">Mahasiswa aktif ITS (tidak sedang cuti)</p>                           
+            </div>
+            <div class="col-md-12 text-center  mb-4 mt-5">
+              <h1 class="text-center mb-3" style="font-size: 30px;">Tunggu apa lagi? Daftarkan timmu sekarang!</h1>
+              <button class="btn btn-success mt-0" data-toggle="modal" data-target="#myModal">Daftar Sekarang</button>
+              <!-- Sart Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="tim-icons icon-simple-remove"></i>
+                      </button>
+                      <h4 class="title title-up">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default">Nice Button</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  End Modal -->
+              <button class="btn btn-success mt-0" data-toggle="modal" data-target="#myModal2">Sudah Punya Akun?</button>
+              <!-- Form Modal -->
+               <div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="tim-icons icon-simple-remove text-white"></i>
+                      </button>
+                      <div class="text-muted text-center ml-auto mr-auto">
+                        <h3 class="mb-0">Sign in with</h3>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="btn-wrapper text-center">
+                        <a href="#" class="btn btn-neutral btn-icon">
+                          <img src="assets/img/github.svg">
+                        </a>
+                        <a href="#" class="btn btn-neutral btn-icon">
+                          <img src="assets/img/google.svg">
+                        </a>
+                      </div>
+                      <div class="text-center text-muted mb-4 mt-3">
+                        <small>Or sign in with credentials</small>
+                      </div>
+                      <form role="form">
+                        <div class="form-group mb-3">
+                          <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="tim-icons icon-email-85"></i>
+                              </span>
+                            </div>
+                            <input class="form-control" placeholder="Email" type="email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="tim-icons icon-key-25"></i>
+                              </span>
+                            </div>
+                            <input class="form-control" placeholder="Password" type="password">
+                          </div>
+                        </div>
+                        <div class="form-check mt-3">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" checked>
+                            <span class="form-check-sign"></span>
+                            Remember me!
+                          </label>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-primary my-4">Sign in</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  End Modal -->
+            </div> 
         </div>
       </div>
     </div>
