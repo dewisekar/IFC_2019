@@ -118,7 +118,6 @@
         <div class="main">
           <div class="section">
             <div class="container" id="sejarah">
-                <hr style="border: 1px solid white; background: white; width: 100%;" data-aos="fade-right">
                 <div class="title">
                   <style>
                     @media screen and (max-width: 992px) {
@@ -181,29 +180,13 @@
                         </div>
                         <p class="text-center">Dokumentasi IFC 2018</p>
                     </div>
-                    <hr style="border: 1px solid white; background: white; width: 100%;" data-aos="fade-left">
                 </div>
             </div>
           </div>
-          <div class="section pt-0">
+          <div class="section">
             <div class="container" id="persyaratan">
               <div class="row">
-                <div class="col-md-12 text-center mb-4">
-                  <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:50px;"></i>
-                  <h1 class="text-center mt-2">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h1>
-                </div>  
-                <div class="col-md-6 text-center">
-                  <i class="tim-icons icon-single-02 text-center" style="color:white; font-size:50px;"></i>
-                  <h1 class="mt-2 mb-1">Kuota</h1>
-                  <h4 style="font-family: 'Roboto', sans-serif;" class="mb-0">Putra 32 tim</h4>
-                  <h4 style="font-family: 'Roboto', sans-serif;">Putri 16 tim*</h4>
-                  <p style="color:white; font-family: 'Roboto', sans-serif;">*: Penambahan kuota bisa terjadi tergantung dengan antusiasme pendaftar</p>
-                </div>
-                <div class="col-md-6 text-center">
-                  <i class="tim-icons icon-calendar-60 text-center" style="color:white; font-size:50px;"></i>
-                  <h1 class="mt-2 mb-1">Pelaksanaan</h1>
-                  <h4 style="font-family: 'Roboto', sans-serif;" class="mb-0">11 Maret - 18 April 2019</h4>
-                </div>               
+                
               </div>
             </div>
           </div>
