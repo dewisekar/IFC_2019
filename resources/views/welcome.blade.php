@@ -13,6 +13,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Nucleo Icons -->
   <link href="./blk/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
@@ -93,20 +94,28 @@
                 <h3 class="mb-3"  style="font-family: 'Acme', sans-serif;">TAKE IT TO THE NEXT LEVEL!</h3>
                 <style>
                   #btn1{
-                    background-image: url("../img/btn1.png");
-                    background-position: center;
-                    color: black;
+                    background-image: url("../img/btn2.png");
+                    background-position: left;
+                    color: white;
                     border: 2px solid white;
-                    font-size: 16px;
+                    font-size: 4vw;
                     font-weight: 600;
-                    transition: 1s;
+                    transition: 1.4s;
+                    background-size: 100%;
+                    border-radius: 10px;
                   }
                   #btn1:hover{
                     color:white;
-                    background-color: transparent;
+                    cursor: pointer;
+                    background-image: url("../img/btn2-1.png");
+                  }
+                  @media screen and (min-width: 992px) {
+                    #btn1 {
+                      font-size: 2vw;
+                    }
                   }
                 </style>
-                <button class="btn mt-0 p-2" id="btn1" onclick="window.location.href='#sejarah'" type="button">EXPLORE!</button>
+                <button class="mt-0 p-2" id="btn1" onclick="window.location.href='#sejarah'">EXPLORE!</button>
             </div>
         </div>
       </div>
@@ -185,9 +194,9 @@
         <div class="container" id="persyaratan">
           <div class="row">
             <div class="col-md-12  mb-4 mt-0">
-              <h1 class="text-center" style="font-family: 'Acme', sans-serif; font-size:40px;">COMPETITIONS</h1>
+              <h1 class="text-center" style="font-family: 'Acme', sans-serif; font-size:40px;" data-aos="fade-up">COMPETITIONS</h1>
               <div style="border-bottom: 2px solid white; display: inline-block;">
-                  <h2 class="text-left mb-1" style="">Futsal Championship</h2>
+                  <h2 class="text-left mb-1" style="" data-aos="zoom-in"><i class="fa fa-soccer-ball-o"></i> Futsal Championship</h2>
               </div>
             </div> 
             <style>
@@ -200,30 +209,34 @@
                 }
               }
             </style> 
-            <div class="col-md-6 text-left pt-3" id="syarat1">
+            <div class="col-md-6 text-left pt-3" id="syarat1" data-aos="zoom-in">
               <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
-              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h4>
+              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 21.000.000,00!</h4>
               
               <i class="tim-icons icon-single-02 text-center" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Kuota</h1>
               <h4 class="mb-0">Putra 32 tim</h4>
-              <h4>Putri 16 tim*</h4>
-              <p style="color:white;">*: Penambahan kuota bisa terjadi tergantung dengan antusiasme pendaftar</p>
-              
+              <h4>Putri 20 tim</h4>
+
+              <i class="tim-icons icon-money-coins text-center mt-3" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Biaya Pendaftaran</h1>
+              <h4 class="mb-0">Putra: Rp 800.000,00</h4>
+              <h4>Putri: Rp 550.000,00</h4>
+            </div>
+            <div class="col-md-6 text-right" id="syarat" data-aos="zoom-in">
               <i class="tim-icons icon-calendar-60 text-center mt-3" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Pelaksanaan</h1>
               <h4  class="mb-2">11 Maret - 18 April 2019</h4>
 
-              <i class="tim-icons icon-money-coins text-center mt-3" style="color:white; font-size:40px;"></i>
-              <h1 class="mt-2 mb-1" style="font-size:25px;">Biaya Pendaftaran</h1>
-              <h4 class="mb-0">Putra 32 tim</h4>
-              <h4>Putri 16 tim*</h4>
-            </div>
-            <div class="col-md-6 text-right" id="syarat">
-                <i class="tim-icons icon-single-copy-04 text-center mt-3" style="color:white; font-size:40px;"></i>
-                <h1 class="mt-2 mb-1" style="font-size:25px;">Persyaratan</h1>
-                <p class="mt-2">Mahasiswa aktif ITS (tidak sedang cuti)</p>                           
+              <i class="tim-icons icon-single-copy-04 text-center mt-3" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Persyaratan</h1>
+              <p class="mt-2">Mahasiswa aktif ITS (tidak sedang cuti).</p>
+              <p>Menyerahkan Form pendaftaran (diketik).</p>
+              <p>Foto Pemain (4x6) 2 lembar berwarna.</p> 
+              <p>Scan KTM dan KSRM.</p>
+              <p>Video Teaser per departemen.</p>
+              <p>Terdapat 2 mahasiswa baru dalam 1 tim.</p>            
             </div>
             <div class="col-md-12 text-center  mb-4 mt-5">
               <h1 class="text-center mb-3" style="font-size: 30px;">Tunggu apa lagi? Daftarkan timmu sekarang!</h1>
@@ -231,90 +244,57 @@
               <!-- Sart Modal -->
               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                  <div class="modal-content">
+                  <div class="modal-content"  style="background-color: #295B65;">
                     <div class="modal-header justify-content-center">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         <i class="tim-icons icon-simple-remove"></i>
                       </button>
-                      <h4 class="title title-up">Modal title</h4>
+                      <h4 class="title title-up" style="color: white;">Mekanisme Pendaftaran</h4>
                     </div>
                     <div class="modal-body">
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      <p style="color: white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
                       </p>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default">Nice Button</button>
+                    <div class="modal-footer"  >
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
               </div>
               <!--  End Modal -->
-              <button class="btn btn-success mt-0" data-toggle="modal" data-target="#myModal2">Sudah Punya Akun?</button>
-              <!-- Form Modal -->
-               <div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        <i class="tim-icons icon-simple-remove text-white"></i>
-                      </button>
-                      <div class="text-muted text-center ml-auto mr-auto">
-                        <h3 class="mb-0">Sign in with</h3>
-                      </div>
-                    </div>
-                    <div class="modal-body">
-                      <div class="btn-wrapper text-center">
-                        <a href="#" class="btn btn-neutral btn-icon">
-                          <img src="assets/img/github.svg">
-                        </a>
-                        <a href="#" class="btn btn-neutral btn-icon">
-                          <img src="assets/img/google.svg">
-                        </a>
-                      </div>
-                      <div class="text-center text-muted mb-4 mt-3">
-                        <small>Or sign in with credentials</small>
-                      </div>
-                      <form role="form">
-                        <div class="form-group mb-3">
-                          <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="tim-icons icon-email-85"></i>
-                              </span>
-                            </div>
-                            <input class="form-control" placeholder="Email" type="email">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="tim-icons icon-key-25"></i>
-                              </span>
-                            </div>
-                            <input class="form-control" placeholder="Password" type="password">
-                          </div>
-                        </div>
-                        <div class="form-check mt-3">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" checked>
-                            <span class="form-check-sign"></span>
-                            Remember me!
-                          </label>
-                        </div>
-                        <div class="text-center">
-                          <button type="button" class="btn btn-primary my-4">Sign in</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+              <button class="btn btn-success mt-0" onclick="window.location.href='../login'">Sudah Punya Akun?</button>
+            </div>
+            <div class="col-md-12  mb-4 mt-5 text-right" data-aos="zoom-in">
+              <div class="text-center" style="border-bottom: 2px solid white; display: inline-block;">
+                  <h2 class=" mb-1" style=""><i class="fa fa-volume-down"></i> Supporter Competition</h2>
               </div>
-              <!--  End Modal -->
-            </div> 
+            </div>  
+            <div class="col-md-6 text-left pt-3" id="syarat1" data-aos="zoom-in">
+              <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
+              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h4>
+            
+            </div>
+            <div class="col-md-6 text-right" id="syarat" data-aos="zoom-in">
+                <i class="tim-icons icon-single-copy-04 text-center mt-3" style="color:white; font-size:40px;"></i>
+                <h1 class="mt-2 mb-1" style="font-size:25px;">Persyaratan</h1>
+                <p class="mt-2">Mahasiswa aktif ITS (tidak sedang cuti)</p>                           
+            </div>
         </div>
       </div>
+    </div>
+    <div class="section" id="">
+      <div class="container">
+        <hr style="border: 1px solid white; background: white; width: 100%;">
+        <div class="title mb-0" data-aos="flip-left">
+          <h1  style="font-family: 'Acme', sans-serif;">TIMELINE</h1>
+        </div>
+        
+
+        </div>
+        <hr style="border: 1px solid white; background: white; width: 100%;">
+      </div>
+    </div>
     </div>
     <footer class="footer">
       <div class="container">
