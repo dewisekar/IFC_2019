@@ -283,14 +283,62 @@
         </div>
       </div>
     </div>
-    <div class="section" id="">
+    <div class="section text-center" id="">
       <div class="container">
         <hr style="border: 1px solid white; background: white; width: 100%;">
         <div class="title mb-0" data-aos="flip-left">
-          <h1  style="font-family: 'Acme', sans-serif;">TIMELINE</h1>
+          <h1  style="font-family: 'Acme', sans-serif; font-size: 40px;">TIMELINE</h1>
+        </div>
+        <div class="col-md-11 ml-auto mr-auto">
+          <!-- Nav tabs -->
+          <div class="card">
+            <div class="card-header">
+              <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                    <i class="tim-icons icon-spaceship"></i> Pra-Technical Meeting
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                    <i class="tim-icons icon-settings-gear-63"></i> Pendaftaran
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                    <i class="tim-icons icon-bag-16"></i> Technical Meeting
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link4" role="tablist">
+                    <i class="tim-icons icon-bag-16"></i> Pelaksanaan
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <!-- Tab panes -->
+              <div class="tab-content tab-space">
+                <div class="tab-pane active" id="link1">
+                  <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+                    <br />
+                    <br/> Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                </div>
+                <div class="tab-pane" id="link2">
+                  <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+                    <br />
+                    <br/>Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                </div>
+                <div class="tab-pane" id="link3">
+                  <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+                    <br />
+                    <br/> Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
-
         </div>
         <hr style="border: 1px solid white; background: white; width: 100%;">
       </div>
