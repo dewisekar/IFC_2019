@@ -27,4 +27,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function peserta(){
+        return $this->hasMany(peserta::class, 'id_tim', 'id');
+    }
 }
