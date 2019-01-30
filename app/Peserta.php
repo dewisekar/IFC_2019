@@ -10,9 +10,9 @@ class Peserta extends Model
     protected $primaryKey = 'id_peserta';
     protected $fillable = [
         'id_tim', 'nama', 'nrp', 'nopunggung', 'posisi'
-    ]
+    ];
 
-    public function punyaTim()[
+    public function punyaTim(){
         return $this->belongsTo(user::class, 'id', 'id_tim');
-    ]
+    }
 }

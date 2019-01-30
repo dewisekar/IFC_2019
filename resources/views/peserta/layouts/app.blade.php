@@ -53,11 +53,13 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="../notika/css/responsive.css">
+    <link rel="stylesheet" href="../notika/css/jquery.dataTables.min.css">
     <!-- modernizr JS
 		============================================ -->
-    <script src="../notika/../notika/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../notika/js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    @yield('css')
+  </head>
 
 <body>
     <!--[if lt IE 8]>
@@ -167,9 +169,13 @@
     <!-- plugins JS
 		============================================ -->
     <script src="../notika/js/plugins.js"></script>
+    <script src="../notika/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="../notika/js/data-table/data-table-act.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="../notika/js/main.js"></script>
+
+    @yield('js')
 </body>
 
 </html>

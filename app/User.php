@@ -31,4 +31,8 @@ class User extends Authenticatable
     public function peserta(){
         return $this->hasMany(peserta::class, 'id_tim', 'id');
     }
+
+    public function official(){
+        return $this->hasMany(official::class, 'id_tim', 'id');
+    }
 }

@@ -1,73 +1,118 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<!doctype html>
+<!--[if lte IE 9]>     <html lang="en" class="no-focus lt-ie10 lt-ie10-msg"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-focus"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+        <link rel="icon" type="image/png" href="./img/logoIFC2.png">
+        <title>IFC 2019 - Dashboard</title>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+        <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:site_name" content="Codebase">
+        <meta property="og:description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+        <!-- Icons -->
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Codebase framework -->
+        <link rel="stylesheet" id="css-main" href="../codebase/assets/css/codebase.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="../codebase/assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <div id="page-container" class="main-content-boxed">
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+                <div class="bg-image" style="background-image: url('../codebase/assets/img/photos/Header.jpg');">
+                    <div class="row mx-0 bg-black-op">
+                        <div class="hero-static col-md-8 col-xl-8 d-none d-md-flex align-items-md-end">
+                            <div class="p-30 invisible" data-toggle="appear">
+                                <p class="font-size-h3 font-w600 text-white" style="margin-bottom: 0; ">
+                                    Take It to The Next Level!
+                                </p>
+                                <p class="font-italic text-white-op">
+                                    <img src="../img/logoUKM.png" width="40%" id="logoukm">
+                                </p>
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                        <div class="hero-static col-md-4 col-xl-4 d-flex align-items-center bg-white invisible" data-toggle="appear" data-class="animated fadeInRight">
+                            <div class="content content-full">
+                                <!-- Header -->
+                                <div class="px-0 py-10">
+                                    <a class=" font-w700" href="index.html">
+                                            <img class="img-detail" src="../codebase/img/logo-ifc.png" style="width: 50%;" alt="">
                                     </a>
-                                @endif
+                                    <h1 class="h3 font-w700 mt-10 mb-10">Selamat Datang di Dashboardmu!</h1>
+                                    <h2 class="h5 font-w400 text-muted mb-0">Silahkan sign in</h2>
+                                </div>
+                                <!-- END Header -->
+
+                                <!-- Sign In Form -->
+                                <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/op_auth_signin.js) -->
+                                <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
+                                <form method="POST" action="{{ route('login') }}">
+                                    @csrf
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                                <label for="login-username">Username</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                                <label for="login-password">Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary" onclick="window.location.href='dashboard'">
+                                            <i class="si si-login mr-10"></i> {{ __('Login') }}
+                                        </button>
+                                    </div>
+                                </form>
+                                <!-- END Sign In Form -->
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
         </div>
-    </div>
-</div>
-@endsection
+        <!-- END Page Container -->
+
+        <!-- Codebase Core JS -->
+        <script src="../codebase/assets/js/core/jquery.min.js"></script>
+        <script src="../codebase/assets/js/core/bootstrap.bundle.min.js"></script>
+        <script src="../codebase/assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="../codebase/assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="../codebase/assets/js/core/jquery.appear.min.js"></script>
+        <script src="../codebase/assets/js/core/jquery.countTo.min.js"></script>
+        <script src="../codebase/assets/js/core/js.cookie.min.js"></script>
+        <script src="../codebase/assets/js/codebase.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="../codebase/assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="../codebase/assets/js/pages/op_auth_signin.js"></script>
+    </body>
+</html>

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Peserta;
+use Auth;
+use App\Official;
 
 class HomeController extends Controller
 {
@@ -23,7 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        return view('peserta.home');
+        $id = Auth::user()->id;
+        $no = 1;
+        $no2 = 1;
+        $peserta = peserta::where('id_tim', $id)->get();
+        $official = official::where('id_tim', $id)->get();
+        return view('peserta.home',compact('peserta', 'no', 'official', 'no2'));
     }
 }

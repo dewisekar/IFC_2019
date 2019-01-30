@@ -18,6 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/pemain', 'PemainController@add')->name('pemain.add');
+Route::post('/official', 'OfficialController@add')->name('official.add');
+Route::post('/editpemain/{id}', 'PemainController@edit')->name('pemain.edit');
+Route::post('/editofficial/{id}', 'OfficialController@edit')->name('official.edit');
+Route::post('/deletepemain/{id}', 'PemainController@delete')->name('delete.pemain');
+Route::post('/deleteofficial/{id}', 'OfficialController@delete')->name('delete.official');
 
 Route::prefix('admin')->group(function () 
 {
