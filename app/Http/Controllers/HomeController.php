@@ -31,6 +31,8 @@ class HomeController extends Controller
         $no2 = 1;
         $peserta = peserta::where('id_tim', $id)->get();
         $official = official::where('id_tim', $id)->get();
-        return view('peserta.home',compact('peserta', 'no', 'official', 'no2'));
+        $jumpes = count($peserta);
+        $jumof = count($official);
+        return view('peserta.home',compact('peserta', 'no', 'official', 'no2', 'jumpes', 'jumof'));
     }
 }

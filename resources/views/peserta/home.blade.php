@@ -84,7 +84,11 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
                         <div class="cmp-tb-hd">
-                            <h2>Daftar Pemain <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#myModalone" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Pemain</button></h2>
+                            @if ($jumpes < 20)
+                                <h2>Daftar Pemain <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#myModalone" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Pemain</button></h2>
+                            @else
+                                <h2>Daftar Pemain</h2>
+                            @endif
                         </div>
                         <div class="modal fade" id="myModalone" role="dialog">
                             <div class="modal-dialog modals-default">
@@ -259,8 +263,12 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
                         <div class="cmp-tb-hd text-left">
-                            <h2>Daftar Official <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#modalPelatih" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Official</button> Daftar Official </h2>
-                        </div>
+                            @if($jumof <4)
+                                <h2>Daftar Official <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#modalPelatih" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Official</button></h2>
+                            @else
+                                <h2>Daftar Official</h2>
+                            @endif
+                            </div>
                         <div class="modal fade" id="modalPelatih" role="dialog">
                             <div class="modal-dialog modals-default">
                                 <div class="modal-content">
