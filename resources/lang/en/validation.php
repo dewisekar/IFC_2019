@@ -128,8 +128,23 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'jumfile' => [
+            'min' => 'Anda belum mengunggah berkas!',
+        ],
+        'jumjes' => [
+            'min' => 'Anda belum mengisi warna jersey!',
+        ],
+        'jumpes' => [
+            'min' => 'Anda belum mengisi data pemain!',
+        ],
+        'jumof' => [
+            'min' => 'Anda belum mengisi data official!',
+        ],
+        'final' => [
+            'required' => 'Anda belum mencentang pernyataan di bawah!',
+        ],
+        'p_nrp' => [
+            'min' => 'NRP Harus 14 digit!',
         ],
     ],
 

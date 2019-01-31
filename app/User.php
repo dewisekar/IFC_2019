@@ -39,4 +39,8 @@ class User extends Authenticatable
     public function fileberkas(){
         return $this->hasMany(fileberkas::class, 'id_tim', 'id');
     }
+
+    public function jersey(){
+        return $this->hasMany(jersey::class, 'id_tim', 'id');
+    }
 }

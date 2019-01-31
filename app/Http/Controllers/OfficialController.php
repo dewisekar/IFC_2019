@@ -30,6 +30,10 @@ class OfficialController extends Controller
     }
 
     public function edit(Request $request, $id){
+        $this->validate($request, [
+            'o_nama' => 'required|string',
+            'o_posisi' => 'required|string',
+        ]);
         $official = official::find($id);
         $official->nama = $request->o_nama;
         $official->noidentitas = $request->o_noidentitas;
