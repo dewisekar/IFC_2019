@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Peserta;
 use Auth;
+use App\Peserta;
 use App\Official;
+use App\FileBerkas;
 
 class HomeController extends Controller
 {
@@ -31,8 +32,10 @@ class HomeController extends Controller
         $no2 = 1;
         $peserta = peserta::where('id_tim', $id)->get();
         $official = official::where('id_tim', $id)->get();
+        $fileberkas = fileberkas::where('id_tim', $id)->get();
         $jumpes = count($peserta);
         $jumof = count($official);
-        return view('peserta.home',compact('peserta', 'no', 'official', 'no2', 'jumpes', 'jumof'));
+        $jumfile = count($fileberkas);
+        return view('peserta.home',compact('peserta', 'no', 'official', 'no2', 'jumpes', 'jumof', 'fileberkas', 'jumfile'));
     }
 }

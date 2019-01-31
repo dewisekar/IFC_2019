@@ -35,4 +35,8 @@ class User extends Authenticatable
     public function official(){
         return $this->hasMany(official::class, 'id_tim', 'id');
     }
+
+    public function fileberkas(){
+        return $this->hasMany(fileberkas::class, 'id_tim', 'id');
+    }
 }

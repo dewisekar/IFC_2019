@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="../notika/css/bootstrap-select/bootstrap-select.css">
     <link rel="stylesheet" href="../notika/css/dialog/sweetalert2.min.css">
     <link rel="stylesheet" href="../notika/css/dialog/dialog.css">
+    <link rel="stylesheet" href="../notika/css/dropzone/dropzone.css">
 
 @endsection
 
@@ -263,12 +264,12 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
                         <div class="cmp-tb-hd text-left">
-                            @if($jumof <4)
+                            @if( $jumof <4)
                                 <h2>Daftar Official <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#modalPelatih" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Official</button></h2>
                             @else
                                 <h2>Daftar Official</h2>
                             @endif
-                            </div>
+                        </div>
                         <div class="modal fade" id="modalPelatih" role="dialog">
                             <div class="modal-dialog modals-default">
                                 <div class="modal-content">
@@ -423,6 +424,57 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-example-wrap mg-t-30">
+                        <div class="cmp-tb-hd">
+                            <h2>Unggah Berkas</h2>
+                            <p>Silahkan upload KTM dan KRSM seluruh pemain yang telah dijadikan ke dalam satu file .zip. Ukuran .zip maximal 30 MB.</p>
+                        </div>
+                        @if($jumfile >0)
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p> Berkasmu adalah: 
+                                    @foreach ($fileberkas as $item)
+                                        <a href="{{url('/deleteberkas/'.$item->id_berkas)}}">{{$item->title}}</a>
+                                    @endforeach
+                                </p>                                
+                            </div>
+                            <div class="col-md-6">
+                                @foreach ($fileberkas as $item)
+                                    <a href="{{url('/downloadback/'.$item->id_berkas)}}">Hapus Berkas</a>
+                                @endforeach
+                            </div>
+                        </div>
+                        @else
+                        <div id="dropzone1" class="multi-uploader-cs">
+                            <form action="/upload" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-3 col-sm-3 col-xs-12">
+                                        <div class="form-group {{ !$errors->has('file') ?: 'has-error' }}">
+                                            <input type="file" name="file">
+                                            <span class="help-block text-danger">{{ $errors->first('file') }}</span>
+                                        </div>
+                                        <div class="form-example-int">
+                                             <button class="btn btn-success" type="submit">Upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-example-wrap mg-t-30">
+                        <div class="cmp-tb-hd">
+                            <h2>Data Lain</h2>
+                            <p>Silahkan download formulir di bawah ini. Isi dengan cara diketik dan ditandatangani sesuai dengan ketentuan pada masing-masing form. Jangan lupa untuk menyerahkan form ke panita IFC 2019 sebelum tanggal ..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Form Examples area End-->
@@ -438,5 +490,6 @@
 
         });
     </script>
+    <script src="../notika/js/dropzone/dropzone.js"></script>
 
 @endsection
