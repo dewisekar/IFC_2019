@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
         <link rel="icon" type="image/png" href="./img/logoIFC2.png">
-        <title>Codebase - Bootstrap 4 Admin Template &amp; UI Framework</title>
+        <title>Admin-Login</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -40,7 +40,7 @@
                             <div class="content content-full overflow-hidden">
                                 <!-- Header -->
                                 <div class="py-30 text-center">
-                                    <a class="link-effect font-w700" href="" style="margin-bottom:0">
+                                    <a class="font-w700" href="../" style="margin-bottom:0">
                                         <img class="img-detail" src="../codebase/img/logo-ifc.png" style="width: 50%;" alt="">
                                     </a>
                                     <h1 class="h4 font-w700 mt-10 mb-10">Dashboard Administrator</h1>
