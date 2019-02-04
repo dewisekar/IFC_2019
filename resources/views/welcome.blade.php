@@ -212,7 +212,7 @@
             <div class="col-md-6 text-left pt-3" id="syarat1" data-aos="zoom-in">
               <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
-              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 21.000.000,00!</h4>
+              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 37.000.000,00!</h4>
               
               <i class="tim-icons icon-single-02 text-center" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Kuota</h1>
