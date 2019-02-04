@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/gantipassword', 'GantiPasswordController@index')->name('gantipassword');
+Route::post('/gantipassword', 'GantiPasswordController@ganti');
 Route::post('/pemain', 'PemainController@add')->name('pemain.add');
 Route::post('/official', 'OfficialController@add')->name('official.add');
 Route::post('/jersey', 'JerseyController@add')->name('jersey.add');

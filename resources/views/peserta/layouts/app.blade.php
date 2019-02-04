@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="./img/logoIFC2.png">
-    <title>IFC 2019 - Dashboard</title>
+    @yield('title')
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -84,6 +84,10 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="header-top-menu">
                         <ul class="nav navbar-nav notika-top-nav">
+                            <li class="nav-item"><a href="../home"  data-toggle="tooltip" data-placement="bottom" title="Dashboard"> <span class="glyphicon glyphicon-dashboard"></span></a>
+                            </li>
+                            <li class="nav-item"><a href="../gantipassword"  data-toggle="tooltip" data-placement="bottom" title="Ganti Password"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
                             <li class="nav-item"><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"  data-toggle="tooltip" data-placement="bottom" title="Log Out"> <span class="glyphicon glyphicon-log-out"></span></a>
                             </li>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
@@ -97,17 +101,7 @@
     @yield('content')
     <!--Start Footer-->
     <!-- Start Footer area-->
-    <div class="footer-copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018 </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- End Footer area-->
     <!-- jquery
 		============================================ -->

@@ -57,11 +57,4 @@ class HomeController extends Controller
         return redirect('/home')->with('success', 'Data berhasil terfinalisasi.');
     }
 
-    public function messages()
-    {
-        return [
-            'jumfile.min' => 'A title is required',
-            'final.required'  => 'Haduh',
-        ];
-    }
 }

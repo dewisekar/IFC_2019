@@ -1,4 +1,7 @@
 @extends('peserta.layouts.app')
+@section('title')
+    <title>IFC 2019 - Dashboard</title>
+@endsection
 @section('css')
     <link rel="stylesheet" href="../notika/css/bootstrap-select/bootstrap-select.css">
     <link rel="stylesheet" href="../notika/css/dialog/sweetalert2.min.css">
@@ -35,60 +38,98 @@
     <!-- Form Examples area start-->
     <div class="form-example-area">
         <div class="container">
+            @if(Auth::user()->finalisasi==1)
+                <div class="alert alert-success" role="alert">
+                    Anda telah melakukan finalisasi data
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>                            
+            @endif
+            @include('peserta.layouts.alert')
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    @if(Auth::user()->finalisasi==1)
-                        <div class="alert alert-success" role="alert">
-                            Anda telah melakukan finalisasi data
+                    <div class="form-example-wrap ">
+                        <div class="header">
+                            <button type="button" class="close" data-toggle="collapse" data-target="#tabel1">&nabla;</button>
                         </div>
-                    @endif
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>                            
-                    @endif
-                    @include('peserta.layouts.alert')
-                    <div class="form-example-wrap">
                         <div class="cmp-tb-hd">
-                            <h2>Form Offline</h2>
-                            <p>Silahkan download formulir di bawah ini. Isi dengan cara diketik dan ditandatangani sesuai dengan ketentuan pada masing-masing form. Jangan lupa untuk menyerahkan form ke panita IFC 2019 sebelum tanggal ..</p>
+                            <h2>Persyaratan Yang Harus Dilengkapi</h2>
+                            <p>Offline</p>
+                            <div class="col-md-12">
+                                 <ol>
+                                    <li><p>Menyerahkan Form Pendaftaran C1, C2, C4. Form bisa diunduh di bawah.</p></li>
+                                    <li><p>Foto Pemain (4x6) 2 Lembar berwarna terbaru dengan dresscode sama 1 tim (Eg: Menggunakan jersey lama tim).</p></li>
+                                    <li><p>Video Teaser Per Departemen.</p></li>
+                                </ol>
+                            </div>
+                            <small> Persyaratan offline dikumpulkan maksimal pada tanggal ... di Sekretariat UKM Sepakbola ITS</small>
+                            
+                            <p class="mg-t-10">Online</p>
+                            <div class="col-md-12">
+                                 <ol>
+                                    <li><p>Mengisi Form C3 yang merupakan data pemain dan data official di bawah. </p></li>
+                                    <li><p>Mengunggah foto KTM dan KRSM tiap pemain. Dijadikan satu ke dalam sebuah file berbentuk zip dengan ukuran zip maksimal 30MB.</p></li>
+                                    <li><p>Mengisi data jersey di bawah.</p></li>
+                                    <li><p>Melakukan verifikasi data di bawah.</p></li>
+                                </ol>
+                            </div>
                         </div>
-                        <table class="table table-sc-ex">
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Nama Form</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Form C1</td>
-                                    <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Form C2</td>
-                                    <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Form C4</td>
-                                    <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
+                        <div class="header">
+                            <button type="button" class="close" data-toggle="collapse" data-target="#tabel1">&nabla;</button>
+                        </div>
+                        <div class="cmp-tb-hd">
+                            <h2>Form Offline</h2>
+                        </div>
+                        <div id="tabel1" class="collapse in">
+                            <table class="table table-sc-ex" id="tabel1">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Nama Form</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Form C1</td>
+                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Form C2</td>
+                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Form C4</td>
+                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-example-wrap mg-t-30">
+                        <div class="header">
+                            <button type="button" class="close" data-toggle="collapse" data-target="#tabel2">&nabla;</button>
+                        </div>
                         <div class="cmp-tb-hd">
                             @if ($jumpes < 20 && Auth::user()->finalisasi==0)
                                 <h2>Daftar Pemain <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#myModalone" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Pemain</button></h2>
@@ -148,7 +189,7 @@
                                 </div>
                             </div>
                         </div>     
-                        <div class="table-responsive">
+                        <div class="table-responsive collapse in" id="tabel2">
                             <table id="data-table-basic" class="table table-striped">
                                 <thead>
                                     <tr>
@@ -274,6 +315,9 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
+                        <div class="header">
+                            <button type="button" class="close" data-toggle="collapse" data-target="#tabel3">&nabla;</button>
+                        </div>
                         <div class="cmp-tb-hd text-left">
                             @if( $jumof <4 &&  Auth::user()->finalisasi==0)
                                 <h2>Daftar Official <button class="btn notika-btn-teal"  data-toggle="modal" data-target="#modalPelatih" style="color: white;"><i class="notika-icon notika-plus-symbol"></i>  Tambah Official</button></h2>
@@ -327,7 +371,7 @@
                                 </div>
                             </div>
                         </div>     
-                        <div class="table-responsive">
+                        <div class="table-responsive collapse in" id="tabel3">
                             <table id="data-table-basic2" class="table table-striped">
                                 <thead>
                                     <tr>
@@ -594,6 +638,17 @@
         </div>
     </div>
     <!-- Form Examples area End-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('js')
@@ -607,5 +662,6 @@
         });
     </script>
     <script src="../notika/js/dropzone/dropzone.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 @endsection

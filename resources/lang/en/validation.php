@@ -146,6 +146,9 @@ return [
         'p_nrp' => [
             'min' => 'NRP Harus 14 digit!',
         ],
+        'newpass' => [
+            'confirmed' => 'Password tidak cocok!',
+        ],
     ],
 
     /*
