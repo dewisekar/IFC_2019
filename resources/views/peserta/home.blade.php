@@ -56,9 +56,6 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap ">
-                        <div class="header">
-                            <button type="button" class="close" data-toggle="collapse" data-target="#tabel1">&nabla;</button>
-                        </div>
                         <div class="cmp-tb-hd">
                             <h2>Persyaratan Yang Harus Dilengkapi</h2>
                             <p>Offline</p>

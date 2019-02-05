@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <link rel="icon" type="image/png" href="../img/logoIFC2.png">
+        <link rel="icon" type="image/png" href="../../img/logoIFC2.png">
         <title>@yield('title')</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
@@ -22,20 +22,20 @@
 
         <!-- Stylesheets -->
         <!-- Codebase framework -->
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-        <link rel="stylesheet" id="css-main" href="../codebase/assets/css/codebase.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/select2/select2.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/select2/select2-bootstrap.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.min.css">
-        <link rel="stylesheet" href="../codebase/assets/js/plugins/dropzonejs/min/dropzone.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" id="css-main" href="../../codebase/assets/css/codebase.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/select2/select2.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/select2/select2-bootstrap.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.min.css">
+        <link rel="stylesheet" href="../../codebase/assets/js/plugins/dropzonejs/min/dropzone.min.css">
 
 
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="../codebase/assets/css/themes/flat.min.css"> -->
+        <!-- <link rel="stylesheet" id="css-theme" href="../../codebase/assets/css/themes/flat.min.css"> -->
         <!-- END Stylesheets -->
         @yield('css')
     </head>
@@ -82,21 +82,21 @@
                         <div class="content-side content-side-full content-side-user px-10 align-parent" style="background-color:#02a3bb">
                             <!-- Visible only in mini mode -->
                             <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                                <img class="img-avatar img-avatar32" src="../codebase/assets/img/avatars/avatar15.jpg" alt="">
+                                <img class="img-avatar img-avatar32" src="../../codebase/assets/img/avatars/avatar15.jpg" alt="">
                             </div>
                             <!-- END Visible only in mini mode -->
 
                             <!-- Visible only in normal mode -->
                             <div class="sidebar-mini-hidden-b text-center">
                                 <a class="img-link" href="be_pages_generic_profile.html">
-                                    <img class="img-avatar" src="../codebase/assets/img/avatars/avatar15.jpg" alt="">
+                                    <img class="img-avatar" src="../../codebase/assets/img/avatars/avatar15.jpg" alt="">
                                 </a>
                                 <ul class="list-inline mt-10">
                                     <li class="list-inline-item">
                                         <a class="link-effect font-size-xs font-w600 text-uppercase" href="be_pages_generic_profile.html" style="color:white;">{{Auth::user()->name}}</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="link-effect text-dual-primary-dark" href="../admin/logout">
+                                        <a class="link-effect text-dual-primary-dark" href="../../admin/logout">
                                             <i class="si si-logout" style="color:white;"></i>
                                         </a>
                                     </li>
@@ -121,16 +121,16 @@
                                     }
                                 </style>
                                 <li>
-                                    <a class="nav-submenu" href="../admin/dashboard" style="color:white;"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                    <a class="nav-submenu" href="../../admin/dashboard" style="color:white;"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Kelola Peserta</span></li>
                                 <li>
-                                    <a class="nav-submenu" href="../admin/peserta"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Peserta</span></a>
-                                    <a class="nav-submenu" href="../admin/jersey"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Jersey Peserta</span></a>
+                                    <a class="nav-submenu" href="../../admin/peserta"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Peserta</span></a>
+                                    <a class="nav-submenu" href="../../admin/jersey"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Jersey Peserta</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Kelola Jadwal dan Hasil Pertandingan</span></li>
                                 <li>
-                                    <a class="nav-submenu" href="../admin/jadwal"><i class="si si-calendar"></i><span class="sidebar-mini-hide">Manajemen Jadwal dan Hasil Pertandingan</span></a>
+                                    <a class="nav-submenu" href="../../admin/jadwal"><i class="si si-calendar"></i><span class="sidebar-mini-hide">Manajemen Jadwal dan Hasil Pertandingan</span></a>
                                 </li>                           
                             </ul>
                         </div>
@@ -170,7 +170,7 @@
                                 <!-- END Side Overlay -->
 
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../admin/logout">
+                                <a class="dropdown-item" href="../../admin/logout">
                                     <i class="si si-logout mr-5"></i> Sign Out
                                 </a>
                             </div>
@@ -251,31 +251,31 @@
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-        <script src="../codebase/assets/js/core/jquery.min.js"></script>
-        <script src="../codebase/assets/js/core/bootstrap.bundle.min.js"></script>
-        <script src="../codebase/assets/js/core/jquery.slimscroll.min.js"></script>
-        <script src="../codebase/assets/js/core/jquery.scrollLock.min.js"></script>
-        <script src="../codebase/assets/js/core/jquery.appear.min.js"></script>
-        <script src="../codebase/assets/js/core/jquery.countTo.min.js"></script>
-        <script src="../codebase/assets/js/core/js.cookie.min.js"></script>
-        <script src="../codebase/assets/js/codebase.js"></script>
+        <script src="../../codebase/assets/js/core/jquery.min.js"></script>
+        <script src="../../codebase/assets/js/core/bootstrap.bundle.min.js"></script>
+        <script src="../../codebase/assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="../../codebase/assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="../../codebase/assets/js/core/jquery.appear.min.js"></script>
+        <script src="../../codebase/assets/js/core/jquery.countTo.min.js"></script>
+        <script src="../../codebase/assets/js/core/js.cookie.min.js"></script>
+        <script src="../../codebase/assets/js/codebase.js"></script>
 
 
         <!-- Page JS Plugins -->
-        <script src="../codebase/assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
-        <script src="../codebase/assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-        <script src="../codebase/assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-        <script src="../codebase/assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
-        <script src="../codebase/assets/js/plugins/select2/select2.full.min.js"></script>
-        <script src="../codebase/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js"></script>
-        <script src="../codebase/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js"></script>
-        <script src="../codebase/assets/js/plugins/masked-inputs/jquery.maskedinput.min.js"></script>
-        <script src="../codebase/assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-        <script src="../codebase/assets/js/plugins/dropzonejs/min/dropzone.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/select2/select2.full.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/masked-inputs/jquery.maskedinput.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+        <script src="../../codebase/assets/js/plugins/dropzonejs/min/dropzone.min.js"></script>
       
 
         <!-- Page JS Code -->
-        <script src="../codebase/assets/js/pages/be_pages_dashboard.js"></script>
+        <script src="../../codebase/assets/js/pages/be_pages_dashboard.js"></script>
         @yield('js')
     </body>
 </html>

@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/gantipassword', 'GantiPasswordController@index')->name('gantipassword');
@@ -42,4 +45,10 @@ Route::prefix('admin')->group(function ()
     Route::get('login', 'Auth\AdminLoginController@login')->name('admin.auth.login');
     Route::post('login', 'Auth\AdminLoginController@loginAdmin')->name('admin.auth.loginAdmin');
     Route::get('logout', 'Auth\AdminLoginController@logout')->name('admin.auth.logout');
+    Route::get('/peserta', 'Admin\PesertaController@index')->name('admin.peserta');
+    Route::get('/detailpeserta/{id}', 'Admin\DetailPesertaController@index')->name('admin.detailpeserta');
+    Route::post('/tambahtim', 'Admin\PesertaController@create')->name('admin.peserta.tambah');
+    Route::post('/deletetim/{id}', 'Admin\PesertaController@delete')->name('admin.peserta.delete');
+    Route::get('/downloadberkas/{id}', 'Admin\PesertaController@downloadfile')->name('file.downloadadmin');
+    Route::get('/downloadpemain', 'Admin\PesertaController@export')->name('file.downloadpemain');
 });
