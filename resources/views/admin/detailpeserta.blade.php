@@ -117,7 +117,7 @@
                             <a href="{{url('../admin/downloadberkas/'.$item->id_berkas)}}">{{$item->title}}</a>
                         @endforeach
                         </p>
-                        <button type="button" class="btn btn-outline-info mr-5 mb-20">
+                        <button type="button" class="btn btn-outline-info mr-5 mb-20" onclick="window.location.href='../downloaddetailpemain/{{$tim->id}}'">
                             <i class="fa fa-download mr-5"></i>Download Data Pemain & Official
                         </button>
                     </div>

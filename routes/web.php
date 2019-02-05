@@ -51,4 +51,5 @@ Route::prefix('admin')->group(function ()
     Route::post('/deletetim/{id}', 'Admin\PesertaController@delete')->name('admin.peserta.delete');
     Route::get('/downloadberkas/{id}', 'Admin\PesertaController@downloadfile')->name('file.downloadadmin');
     Route::get('/downloadpemain', 'Admin\PesertaController@export')->name('file.downloadpemain');
+    Route::get('/downloaddetailpemain/{id}', 'Admin\DetailPesertaController@download');
 });
