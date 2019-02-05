@@ -9,6 +9,8 @@ use App\Peserta;
 use App\User;
 use App\FileBerkas;
 use App\Exports\PemainExport;
+use App\Exports\OfficialExport;
+use App\Exports\TimExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Storage;
 
@@ -61,6 +63,6 @@ class PesertaController extends Controller
 
     public function export() 
     {
-        return Excel::download(new PemainExport, 'pemain.xlsx');
+        return Excel::download(new TimExport, 'Data Pemain & Official Keseluruhan.xlsx');
     }
 }
