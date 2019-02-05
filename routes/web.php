@@ -46,10 +46,12 @@ Route::prefix('admin')->group(function ()
     Route::post('login', 'Auth\AdminLoginController@loginAdmin')->name('admin.auth.loginAdmin');
     Route::get('logout', 'Auth\AdminLoginController@logout')->name('admin.auth.logout');
     Route::get('/peserta', 'Admin\PesertaController@index')->name('admin.peserta');
+    Route::get('/jersey', 'Admin\JerseyController@index');
     Route::get('/detailpeserta/{id}', 'Admin\DetailPesertaController@index')->name('admin.detailpeserta');
     Route::post('/tambahtim', 'Admin\PesertaController@create')->name('admin.peserta.tambah');
     Route::post('/deletetim/{id}', 'Admin\PesertaController@delete')->name('admin.peserta.delete');
     Route::get('/downloadberkas/{id}', 'Admin\PesertaController@downloadfile')->name('file.downloadadmin');
     Route::get('/downloadpemain', 'Admin\PesertaController@export')->name('file.downloadpemain');
+    Route::get('/downloadjersey', 'Admin\JerseyController@download');
     Route::get('/downloaddetailpemain/{id}', 'Admin\DetailPesertaController@download');
 });

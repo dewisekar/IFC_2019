@@ -13,6 +13,6 @@ class FileBerkas extends Model
     ];
 
     public function punyaTim(){
-        return $this->belongsTo(user::class, 'id', 'id_tim');
+        return $this->belongsTo(user::class, 'id_tim', 'id');
     }
 }

@@ -13,6 +13,6 @@ class Jersey extends Model
     ];
 
     public function punyaTim(){
-        return $this->belongsTo(user::class, 'id', 'id_tim');
+        return $this->belongsTo('App\User', 'id_tim', 'id');
     }
 }
