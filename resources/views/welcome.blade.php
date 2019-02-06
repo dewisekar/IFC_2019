@@ -403,6 +403,9 @@
               <a target="_blank" href="https://twitter.com/ifc_2019" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
                 <i class="fab fa-twitter"></i>
               </a>
+              <h4 class="mt-5 mb-2"> Contact Person: </h4>
+              <p>Chandra (082282490691/Line id: chandraalfianp)</p>
+              <p>William (081297806567/Line id: williambun26))</p>
             </div>
           </div>
         </div> 
