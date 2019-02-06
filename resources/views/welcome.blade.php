@@ -28,9 +28,9 @@
 <style>
   html{
     background-image: url("../../img/bg2.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
   }
 </style>
 
