@@ -25,6 +25,15 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
+<style>
+  html{
+    background-image: url("../../img/bg2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+  }
+</style>
+
 <body class="index-page">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top  navbar-transparent" color-on-scroll="100" style="background-color: #295B65;">
@@ -65,10 +74,10 @@
                     }
                   </style>
                   <li class="nav-item p-0">
-                    <a class="nav-link" id="navmenu" href="">Pendaftaran</a>
+                    <a class="nav-link" id="navmenu" href="#persyaratan">Pendaftaran</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link" id="navmenu" href="">Timeline</a>
+                    <a class="nav-link" id="navmenu" href="#tl">Timeline</a>
                   </li>
                   <li class="nav-item p-0">
                     <a class="nav-link" id="navmenu" href="#"  rel="tooltip" title="Coming Soon!" data-placement="bottom">Jadwal Pertandingan</a>
@@ -122,9 +131,9 @@
     </div>
     <div class="main">
       <div class="section" id="sejarah">
-          <div class="container">
-            <hr style="border: 1px solid white; background: white; width: 100%;">
-            <div class="title mb-0" data-aos="flip-left">
+        <div class="container">
+          <hr style="border: 1px solid white; background: white; width: 100%;">
+          <div class="title mb-0" data-aos="flip-left">
               <style>
                 @media screen and (max-width: 992px) {
                   #logoukm {
@@ -134,8 +143,8 @@
               </style>
               <img src="../img/logoUKM.png" width="20%" id="logoukm">
               <h3  style="font-family: 'Acme', sans-serif;">UKM Sepakbola ITS Presents:</h3>
-            </div>
-            <div class="row justify-content-between align-items-center">
+          </div>
+          <div class="row justify-content-between align-items-center">
               <div class="col-lg-5 mb-5 mb-lg-0 " data-aos="flip-left">
                   <h1 class="text-white font-weight-light" >ITS Futsal Championship 2019</h1>
                   <p class="text-white mt-4">IFC merupakan salah satu event dari UKM Sepakbola ITS dan kompetisi futsal antar departemen di ITS. IFC diikuti oleh 32 tim putra dan 16 tim putri dari departemen-departemen di iTS pada tahun 2017 dan 2018. Tahun 2019 merupakan tahun kesepuluh IFC diadakan. Jangan lupa untuk siapkan tim terbaikmu agar tidak ketinggalan event futsal terbesar tahunan di ITS!</p>   
@@ -185,13 +194,12 @@
                 </div>
                 <p class="text-center">Dokumentasi IFC 2018</p>
               </div>
-            </div>
-            <hr style="border: 1px solid white; background: white; width: 100%;">
           </div>
+          <hr style="border: 1px solid white; background: white; width: 100%;">
         </div>
       </div>
-      <div class="section pt-0">
-        <div class="container" id="persyaratan">
+      <div class="section pt-0 mb-0" id="persyaratan" style="margin-bottom: 0; padding-bottom:0">
+        <div class="container" >
           <div class="row">
             <div class="col-md-12  mb-4 mt-0">
               <h1 class="text-center" style="font-family: 'Acme', sans-serif; font-size:40px;" data-aos="fade-up">COMPETITIONS</h1>
@@ -238,12 +246,12 @@
               <p>Video Teaser per departemen.</p>
               <p>Terdapat 2 mahasiswa baru dalam 1 tim.</p>            
             </div>
-            <div class="col-md-12 text-center  mb-4 mt-5">
+            <div class="col-md-12 text-center  mb-4 mt-5" data-aos="zoom-in">
               <h1 class="text-center mb-3" style="font-size: 30px;">Tunggu apa lagi? Daftarkan timmu sekarang!</h1>
               <button class="btn btn-success mt-0" data-toggle="modal" data-target="#myModal">Daftar Sekarang</button>
               <!-- Sart Modal -->
               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
                   <div class="modal-content"  style="background-color: #295B65;">
                     <div class="modal-header justify-content-center">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -251,9 +259,13 @@
                       </button>
                       <h4 class="title title-up" style="color: white;">Mekanisme Pendaftaran</h4>
                     </div>
-                    <div class="modal-body">
-                      <p style="color: white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                      </p>
+                    <div class="modal-body text-left" >
+                      <h4>Online</h4>
+                      <p style="color: white;"> Calon peserta menghubungi panitia untuk mendapat rekening untuk ditransfer. Peserta memberi bukti transfer ke panitia dan mendapat username dan password untuk masuk ke website IFC.
+                        Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
+                        <h4>Offline</h4>
+                        <p style="color: white;"> Calon peserta datang ke Sekretariat UKM Sepakbola ITS dengan membawa uang pendaftaran sebanyak yang telah ditentukan. Peserta mendapat username dan password untuk masuk ke website IFC.
+                          Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
                     </div>
                     <div class="modal-footer"  >
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -270,149 +282,130 @@
               </div>
             </div>  
             <div class="col-md-6 text-left pt-3" id="syarat1" data-aos="zoom-in">
-              <i class="tim-icons icon-gift-2 text-center" style="color:white; font-size:40px;"></i>
-              <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
-              <h4 class="text-left mt-2 mb-3">Daftarkan tim terbaikmu sekarang dan dapatkan hadiah dengan total mencapai Rp 32.000.000,00!</h4>
-            
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Terbaik</h1>
+              <h4 class="text-left mt-2 mb-3">Kriteria penilaian:</h4>
+              <p> - Yel-yel</p>
+              <p> - Atribut</p>
+              <p> - Koreografi</p>
+              <p class="mb-0"> - Ketertiban</p>
             </div>
             <div class="col-md-6 text-right" id="syarat" data-aos="zoom-in">
-                <i class="tim-icons icon-single-copy-04 text-center mt-3" style="color:white; font-size:40px;"></i>
-                <h1 class="mt-2 mb-1" style="font-size:25px;">Persyaratan</h1>
-                <p class="mt-2">Mahasiswa aktif ITS (tidak sedang cuti)</p>                           
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Terfavorit</h1>
+              <h4 class=" mt-2 mb-3">Kriteria penilaian:</h4>
+              <p> - Jumlah vote tiket terbanyak</p>
+
+              <i class="tim-icons icon-gift-2 text-center mt-4" style="color:white; font-size:40px;"></i>
+              <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
+              <h4 class=" mt-2 mb-0">Dapatkan total hadiah mencapai ..</h4>
+            </div>                        
             </div>
         </div>
       </div>
-    </div>
-    <div class="section text-center" id="">
-      <div class="container">
-        <hr style="border: 1px solid white; background: white; width: 100%;">
-        <div class="title mb-0" data-aos="flip-left">
-          <h1  style="font-family: 'Acme', sans-serif; font-size: 40px;">TIMELINE</h1>
-        </div>
-        <div class="col-md-11 ml-auto mr-auto">
-          <!-- Nav tabs -->
-          <div class="card">
-            <div class="card-header">
-              <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
-                    <i class="tim-icons icon-spaceship"></i> Pra-Technical Meeting
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
-                    <i class="tim-icons icon-settings-gear-63"></i> Pendaftaran
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
-                    <i class="tim-icons icon-bag-16"></i> Technical Meeting
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#link4" role="tablist">
-                    <i class="tim-icons icon-bag-16"></i> Pelaksanaan
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <!-- Tab panes -->
-              <div class="tab-content tab-space">
-                <div class="tab-pane active" id="link1">
-                  <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
-                    <br />
-                    <br/> Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                </div>
-                <div class="tab-pane" id="link2">
-                  <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-                    <br />
-                    <br/>Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                </div>
-                <div class="tab-pane" id="link3">
-                  <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
-                    <br />
-                    <br/> Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+      <div class="section mb-0" style="padding-bottom: 0;" id="tl">
+        <div class="container">
+          <hr style="border: 1px solid white; background: white; width: 100%;">
+          <div class="row">
+            <div class="col-md-6 mb-0 pb-0" data-aos="flip-left">
+              <div class="title mb-0 text-center" data-aos="flip-left">
+                <h1  style="font-family: 'Acme', sans-serif; font-size: 40px;">TIMELINE</h1>
+              </div>
+              <div class="col-md-12 mr-auto ml-auto">
+                <!-- Nav tabs -->
+                <div class="card">
+                  <div class="card-header" style="background-color: #2B748C;">
+                    <ul class="nav nav-tabs nav-tabs-primary justify-content-center" role="tablist">
+                      <li class="nav-item">
+                        <style>
+                        </style>
+                        <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                          1
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                          2
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                          3
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#link4" role="tablist">
+                          4
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body" style="background-color: #2B748C;" >
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-space text-center" >
+                      <div class="tab-pane active" id="link1">
+                        <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Pra-Technical Meeting</h2>
+                        <h3 class="mt-0 mb-0 pb-0"> 15 Februari 2019</h3>
+                      </div>
+                      <div class="tab-pane" id="link2">
+                          <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Pendaftaran</h2>
+                          <h3 class="mt-0 mb-0 pb-0"> 1 Februari - 1 Maret 2019</h3>
+                      </div>
+                      <div class="tab-pane" id="link3">
+                        <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Technical Meeting</h2>
+                        <h3 class="mt-0 mb-0 pb-0"> 4 Maret 2019</h3>
+                      </div>
+                      <div class="tab-pane" id="link4">
+                        <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Pelaksanaan</h2>
+                        <h3 class="mt-0 mb-0 pb-0"> 11 Maret- 18 April 2019</h3>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="col-md-6 mb-0 pb-0 text-center" data-aos="flip-left">
+              <div class="title mb-0 text-center" data-aos="flip-left">
+                <h1  style="font-family: 'Acme', sans-serif; font-size: 40px;">LOKASI</h1>
+              </div>
+              <style>
+                  @media screen and (max-width: 992px) {
+                    iframe {
+                      width:300;
+                    }
+                  }
+                </style>
+              <div class="mapouter" style="width: 100%; margin-bottom: 0"><div class="gmap_canvas" style=" display: inline-block; margin-left: auto; margin-right: auto; margin-bottom: 0 "><iframe width="100%" height="240" id="gmap_canvas" src="https://maps.google.com/maps?q=gor pertamina its&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="display: inline-block; margin-left: auto; margin-right: auto; margin-bottom: 0"></iframe></div><a href="https://www.pureblack.de/webdesign-hannover/"></a><style>.mapouter{overflow:hidden;height:240px;width:80%;}.gmap_canvas {background:none!important;height:240px;width:90%;}</style></div>
+            </div>
+          </div>        
         </div>
-        
-        </div>
-        <hr style="border: 1px solid white; background: white; width: 100%;">
       </div>
-    </div>
     </div>
     <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h1 class="title">BLK•</h1>
-          </div>
-          <div class="col-md-3">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./examples/landing-page.html" class="nav-link">
-                  Landing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./examples/register-page.html" class="nav-link">
-                  Register
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./examples/profile-page.html" class="nav-link">
-                  Profile
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="https://creative-tim.com/contact-us" class="nav-link">
-                  Contact Us
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://creative-tim.com/about-us" class="nav-link">
-                  About Us
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://creative-tim.com/blog" class="nav-link">
-                  Blog
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://opensource.org/licenses/MIT" class="nav-link">
-                  License
-                </a>
-              </li>
-            </ul>
+        <div class="row" data-aos="zoom-in">
+          <div class="col-md-9 text-left">
+            <h1 class="title mb-1">ITS Futsal Championship 2019</h1>
+            <h3 class="mb-1"> Supported by: </h3>
+            <img src="../img/header.png" width="90%" class="ml-0 pl-0">
+            <h3 class="mt-3"> Sponsored by: </h3>
           </div>
           <div class="col-md-3">
             <h3 class="title">Follow us:</h3>
             <div class="btn-wrapper profile">
-              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+              <a target="_blank" href="https://line.me/R/ti/p/%40SPX7694Q" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Add us">
+                <i class="fab fa-line"></i>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/ifc2019/" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCMN5Kb0LH6W7H8R2VQkRk0w" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/ifc_2019" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
                 <i class="fab fa-twitter"></i>
-              </a>
-              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
-                <i class="fab fa-dribbble"></i>
               </a>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </footer>
   </div>

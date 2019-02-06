@@ -110,8 +110,10 @@ body {
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
-  background-color: #317083;
+  background-color: none;
 }
+
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -12416,13 +12418,13 @@ fieldset[disabled] .btn-link.active {
 
 .footer {
   padding: 50px 0;
-  border-top: 2px solid #435DB5;
-  background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
+  background: radial-gradient(ellipse at bottom, #2b7687 30%, #295B65 80%);
 }
 
 .footer [class*="container-"] {
   padding: 0;
 }
+
 
 .footer .nav {
   display: block;

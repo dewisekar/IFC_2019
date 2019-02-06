@@ -38,7 +38,6 @@ Route::post('/deleteofficial/{id}', 'OfficialController@delete')->name('delete.o
 
 Route::prefix('admin')->group(function () 
 {
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
     Route::get('dashboard', 'AdminController@index')->name('admin.dashboard');
     Route::get('register', 'AdminController@create')->name('admin.register');
     Route::post('register', 'AdminController@store')->name('admin.register.store');

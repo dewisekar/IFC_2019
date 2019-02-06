@@ -64,6 +64,7 @@
                                     <li><p>Menyerahkan Form Pendaftaran C1, C2, C4. Form bisa diunduh di bawah.</p></li>
                                     <li><p>Foto Pemain (4x6) 2 Lembar berwarna terbaru dengan dresscode sama 1 tim (Eg: Menggunakan jersey lama tim).</p></li>
                                     <li><p>Video Teaser Per Departemen.</p></li>
+                                    <li><p>Berkas-berkas selain video teaser dikumpulkan saat technical meeting tanggal 4 Maret 2019.</p></li>
                                 </ol>
                             </div>
                             <small> Persyaratan offline dikumpulkan maksimal pada tanggal ... di Sekretariat UKM Sepakbola ITS</small>
@@ -356,6 +357,7 @@
                                                         <option>Asisten Pelatih</option>
                                                         <option>Manager</option>
                                                         <option>Fotografer</option>
+                                                        <option>Koordinator Suporter</option>
                                                     </select>
                                                 </div>
                                             </div>                                                                          
@@ -430,6 +432,7 @@
                                                                         <option>Asisten Pelatih</option>
                                                                         <option>Manager</option>
                                                                         <option>Fotografer</option>
+                                                                        <option>Koordinator Suporter</option>
                                                                     </select>
                                                                 </div>
                                                             </div>                                                                          
