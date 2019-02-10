@@ -153,34 +153,43 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="../img/carousel/c1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="../img/c1.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                               <p>Pertandingan final putra antara T. Material VS T. Sistem Perkapalan</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../img/carousel/c2.jpg" alt="First slide">
+                            <img class="d-block w-100" src="../img/c2.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                               <p>Pertandingan final putri antara Kimia VS T. Geomatika</p>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="../img/carousel/c3.jpg" alt="First slide">
+                            <img class="d-block w-100" src="../img/c3.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                               <p style="color:black;">Pertandingan persahabatan antara UKM Sepakbola ITS VS Timnas Futsal Indonesia</p>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="../img/carousel/c4.jpg" alt="First slide">
+                            <img class="d-block w-100" src="../img/c4.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                               <p style="color:black;">Champion Tim Putri</p>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="../img/carousel/c5.jpg" alt="First slide">
+                            <img class="d-block w-100" src="../img/c5.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                               <p>Champion Tim Putra</p>
                             </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/c6.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/c7.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/c8.JPG" alt="First slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -246,36 +255,6 @@
               <p>Video Teaser per departemen.</p>
               <p>Terdapat 2 mahasiswa baru dalam 1 tim.</p>            
             </div>
-            <div class="col-md-12 text-center  mb-4 mt-5" data-aos="zoom-in">
-              <h1 class="text-center mb-3" style="font-size: 30px;">Tunggu apa lagi? Daftarkan timmu sekarang!</h1>
-              <button class="btn btn-success mt-0" data-toggle="modal" data-target="#myModal">Daftar Sekarang</button>
-              <!-- Sart Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content"  style="background-color: #295B65;">
-                    <div class="modal-header justify-content-center">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        <i class="tim-icons icon-simple-remove"></i>
-                      </button>
-                      <h4 class="title title-up" style="color: white;">Mekanisme Pendaftaran</h4>
-                    </div>
-                    <div class="modal-body text-left" >
-                      <h4>Online</h4>
-                      <p style="color: white;"> Calon peserta menghubungi panitia untuk mendapat rekening untuk ditransfer. Peserta memberi bukti transfer ke panitia dan mendapat username dan password untuk masuk ke website IFC.
-                        Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
-                        <h4>Offline</h4>
-                        <p style="color: white;"> Calon peserta datang ke Sekretariat UKM Sepakbola ITS dengan membawa uang pendaftaran sebanyak yang telah ditentukan. Peserta mendapat username dan password untuk masuk ke website IFC.
-                          Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
-                    </div>
-                    <div class="modal-footer"  >
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  End Modal -->
-              <button class="btn btn-success mt-0" onclick="window.location.href='../login'">Sudah Punya Akun?</button>
-            </div>
             <div class="col-md-12  mb-4 mt-5 text-right" data-aos="zoom-in">
               <div class="text-center" style="border-bottom: 2px solid white; display: inline-block;">
                   <h2 class=" mb-1" style=""><i class="fa fa-volume-down"></i> Supporter Competition</h2>
@@ -296,9 +275,20 @@
 
               <i class="tim-icons icon-gift-2 text-center mt-4" style="color:white; font-size:40px;"></i>
               <h1 class="mt-2 mb-1" style="font-size:25px;">Hadiah</h1>
-              <h4 class=" mt-2 mb-0">Dapatkan total hadiah mencapai ..</h4>
+              <h4 class=" mt-2 mb-0">Dapatkan total hadiah mencapai RP. 1000.000,00</h4>
             </div>                        
-            </div>
+          </div>
+          <h1 class="text-center mb-2 mt-5" style="font-size: 30px;">Tunggu apa lagi? Daftarkan timmu sekarang!</h1>
+          <div class="col-md-12 text-center  mb-0 mt-2 p-5" data-aos="zoom-in" style="border: 1px solid white;">
+            <h3> Mekanisme Pendaftaran: </h3>
+            <h4 class="mb-0">Online</h4>
+            <p style="color: white;" class="mb-3"> Calon peserta menghubungi panitia untuk mendapat rekening untuk ditransfer. Peserta memberi bukti transfer ke panitia dan mendapat username dan password untuk masuk ke website IFC.
+              Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
+              <h4 class="mb-0">Offline</h4>
+              <p style="color: white;" class="mb-3"> Calon peserta datang ke Sekretariat UKM Sepakbola ITS dengan membawa uang pendaftaran sebanyak yang telah ditentukan. Peserta mendapat username dan password untuk masuk ke website IFC.
+                Peserta login melalui ifc.sepakbolaits.com/login untuk masuk ke dashboard. Langkah selanjutnya bisa dilihat setelah peserta berhasil masuk ke website</p>
+            <button class="btn btn-success mt-0" onclick="window.location.href='../login'">Sudah Punya Akun?</button>
+          </div>
         </div>
       </div>
       <div class="section mb-0" style="padding-bottom: 0;" id="tl">
@@ -347,7 +337,7 @@
                       </div>
                       <div class="tab-pane" id="link2">
                           <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Pendaftaran</h2>
-                          <h3 class="mt-0 mb-0 pb-0"> 1 Februari - 1 Maret 2019</h3>
+                          <h3 class="mt-0 mb-0 pb-0"> 11 Februari - 1 Maret 2019</h3>
                       </div>
                       <div class="tab-pane" id="link3">
                         <h2 class="mt-0 mb-1 pb-0" style="text-decoration: underline;">Technical Meeting</h2>
@@ -405,7 +395,7 @@
               </a>
               <h4 class="mt-5 mb-2"> Contact Person: </h4>
               <p>Chandra (082282490691/Line id: chandraalfianp)</p>
-              <p>William (081297806567/Line id: williambun26))</p>
+              <p>Yuni (085646184422/Line id: yvnisari)</p>
             </div>
           </div>
         </div> 
