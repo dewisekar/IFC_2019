@@ -53,5 +53,6 @@ Route::prefix('admin')->group(function ()
     Route::get('/downloadpemain', 'Admin\PesertaController@export')->name('file.downloadpemain');
     Route::get('/downloadjersey', 'Admin\JerseyController@download');
     Route::get('/viewdsp/{id}', 'Admin\DSPController@index');
+    Route::get('/viewdsp', 'Admin\DSPController@total');
     Route::get('/downloaddetailpemain/{id}', 'Admin\DetailPesertaController@download');
 });

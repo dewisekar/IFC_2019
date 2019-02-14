@@ -1,3 +1,4 @@
+@foreach($tim as $item)
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -24,16 +25,16 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Dewi Sekarini</o:Author>
   <o:LastAuthor>Dewi Sekarini</o:LastAuthor>
-  <o:Revision>13</o:Revision>
-  <o:TotalTime>10</o:TotalTime>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>26</o:TotalTime>
   <o:Created>2019-02-12T10:43:00Z</o:Created>
-  <o:LastSaved>2019-02-12T10:55:00Z</o:LastSaved>
+  <o:LastSaved>2019-02-13T14:53:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>66</o:Words>
-  <o:Characters>378</o:Characters>
-  <o:Lines>3</o:Lines>
+  <o:Words>91</o:Words>
+  <o:Characters>523</o:Characters>
+  <o:Lines>4</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>443</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>613</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -61,6 +62,7 @@ w\:* {behavior:url(#default#VML);}
    <w:BreakWrappedTables/>
    <w:SplitPgBreakAndParaMark/>
   </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
   <m:mathPr>
    <m:mathFont m:val="Cambria Math"/>
    <m:brkBin m:val="before"/>
@@ -670,7 +672,7 @@ w\:* {behavior:url(#default#VML);}
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:-536859905 1073786111 1 0 511 0;}
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -701,6 +703,8 @@ p
 	text-underline:single;}
 p.msonormal0, li.msonormal0, div.msonormal0
 	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
@@ -714,6 +718,8 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	text-underline:single;}
 p.s1, li.s1, div.s1
 	{mso-style-name:s1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -729,6 +735,8 @@ p.s1, li.s1, div.s1
 	text-underline:none;}
 p.s2, li.s2, div.s2
 	{mso-style-name:s2;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -744,6 +752,8 @@ p.s2, li.s2, div.s2
 	text-underline:none;}
 p.s3, li.s3, div.s3
 	{mso-style-name:s3;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
@@ -759,6 +769,8 @@ p.s3, li.s3, div.s3
 	text-underline:none;}
 p.p, li.p, div.p
 	{mso-style-name:p;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
@@ -897,10 +909,10 @@ CHAMPIONSHIP 2019<o:p></o:p></span></p>
 <p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
-line-height:188%'><o:p>&nbsp;</o:p></p>
+line-height:186%'><o:p>&nbsp;</o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
-line-height:188%'><o:p>&nbsp;</o:p></p>
+line-height:186%'><o:p>&nbsp;</o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
 line-height:150%'>Hari / <span class=SpellE><span class=GramE>Tanggal</span></span><span
@@ -911,8 +923,7 @@ line-height:150%'><span class=SpellE><span class=GramE>Pertandingan</span></span
 class=GramE> :</span></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
-line-height:150%'>Nama <span class=GramE>Tim :</span> {{$tim->name}} - {{$tim->jenis}}</p>
-<br>
+line-height:150%'>Nama <span class=GramE>Tim :</span></p>
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100%;border-collapse:collapse;mso-yfti-tbllook:1184;
@@ -1023,8 +1034,8 @@ line-height:150%'>Nama <span class=GramE>Tim :</span> {{$tim->name}} - {{$tim->j
   mso-bidi-font-size:11.0pt'>Keterangan</span></span></p>
   </td>
  </tr>
- @foreach ($pemain as $item2)
-     <tr>
+ @foreach($item->peserta as $item2)
+    <tr>
         <td width="8%" style='width:8.12%;border:solid windowtext 1.0pt;padding:
         .75pt .75pt .75pt .75pt;height:20.0pt'>
         <p class=s3 align=center style='margin:0in;margin-bottom:.0001pt;text-align:
@@ -1125,54 +1136,56 @@ line-height:150%'>Nama <span class=GramE>Tim :</span> {{$tim->name}} - {{$tim->j
         center;line-height:13.0pt'><span class=SpellE><span style='font-size:10.0pt;
         mso-bidi-font-size:11.0pt'></span></span></p>
         </td>
-     </tr>
- @endforeach
+    </tr>
+@endforeach
 </table>
 
-<p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
+<p style='line-height:115%'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
 
-<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify'>Manager<span
-style='mso-tab-count:1'>              </span>: 
-@foreach($manager as $item)
-({{$item->nama}}) 
+<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
+line-height:150%'>Manager<span class=GramE><span style='mso-tab-count:1'>              </span>
+:</span> 
+@foreach($item->official as $item2)
+@if($item2->posisi == 'Manager')
+  ({{$item2->nama}}) 
+@endif
 @endforeach
 </p>
 
-<p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
+<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
+line-height:150%'><span class=SpellE>Pelatih</span><span style='mso-tab-count:
+2'>                  </span><span class=GramE> :</span> 
+@foreach($item->official as $item2)
+@if($item2->posisi == 'Pelatih')
+  ({{$item2->nama}}) 
+@endif
+@endforeach
+</p>
 
-<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify'><span
-class=SpellE>Pelatih</span><span style='mso-tab-count:2'>                  </span>:
-@foreach($coach as $item)
-({{$item->nama}}) 
-@endforeach</p>
-
-<p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
-
-<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify'><span
-class=SpellE>Warna</span> <span class=SpellE>Kaos</span> Tim: ___________________________________<o:p></o:p></p>
+<p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
+line-height:150%'><span class=SpellE>Warna</span> <span class=SpellE>Kaos</span>
+<span class=GramE>Tim :</span> ___________________________________</p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
 
-<p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
+<p style='text-align:justify'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify'>*) R: <span
-    class=SpellE>Rompi</span>; ID: ID Card; KT: KTM; D: Dekker; <span
-    style='mso-spacerun:yes'> </span>K: Kuku; A: <span class=SpellE>Aksesoris</span>;
-    N: <span class=SpellE>Nomor</span> Baju <span class=SpellE>Celana</span>; KK: <span
-    class=SpellE>Kaos</span> Kaki; PP: Jersey Power Play; M: Main ; C : <span
-    class=SpellE>Cadangan</span> ; O: Off/<span class=SpellE>Cadangan</span> Mati; <span
-    class=SpellE>Keterangan</span> : <span class=SpellE>Kiper</span>/<span
-    class=SpellE>Kapten</span></p>
+class=SpellE>Rompi</span>; ID: ID Card; KT: KTM; D: Dekker; <span
+style='mso-spacerun:yes'> </span>K: Kuku; A: <span class=SpellE>Aksesoris</span>;
+N: <span class=SpellE>Nomor</span> Baju <span class=SpellE>Celana</span>; KK: <span
+class=SpellE>Kaos</span> Kaki; PP: Jersey Power Play; M: Main ; C : <span
+class=SpellE>Cadangan</span> ; O: Off/<span class=SpellE>Cadangan</span> Mati; <span
+class=SpellE>Keterangan</span> : <span class=SpellE>Kiper</span>/<span
+class=SpellE>Kapten</span></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
 
 <p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
 
 <p class=s2 align=right style='margin:0in;margin-bottom:.0001pt;text-align:
-right'><span class=GramE>Surabaya, <span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'> </span></span><span
-style='mso-spacerun:yes'>   </span><span
-style='mso-spacerun:yes'>                            </span>2019</p>
+right'><span class=GramE>Surabaya,<span style='mso-spacerun:yes'>   </span></span><span
+style='mso-spacerun:yes'>                               </span>2019</p>
 
 <p class=s2 align=right style='margin:0in;margin-bottom:.0001pt;text-align:
 right'>Manager / <span class=SpellE>Pelatih</span></p>
@@ -1193,10 +1206,11 @@ right'><o:p>&nbsp;</o:p></p>
 right'><o:p>&nbsp;</o:p></p>
 
 <p class=s2 align=right style='margin:0in;margin-bottom:.0001pt;text-align:
-right'>___________________</p>
+right;page-break-after: always;'>___________________</p>
 
 </div>
 
 </body>
 
 </html>
+@endforeach

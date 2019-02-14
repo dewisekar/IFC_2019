@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
+use DB;
 use App\Peserta;
 use App\User;
+use App\Official;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -17,7 +19,14 @@ class DSPController extends Controller
     public function index($id){
         $no =1;
         $pemain = peserta::whereIn('id_tim', [$id])->orderBy('nopunggung', 'asc')->get();
+        $coach = official::whereIn('id_tim', [$id])->whereIn('posisi', ['Pelatih'])->get();
+        $manager = official::whereIn('id_tim', [$id])->whereIn('posisi', ['Manager'])->get();
         $tim = user::find($id); 
-        return view('admin.dsp',  compact('pemain','no', 'tim'));
+        return view('admin.dsp',  compact('pemain','no', 'tim', 'coach', 'manager'));
+    }
+
+    public function total(){
+        $tim = user::with("peserta")->with("official")->get();                   
+        return view('admin.dsptotal', compact('tim'));
     }
 }
