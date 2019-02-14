@@ -21,12 +21,12 @@ class DSPController extends Controller
         $pemain = peserta::whereIn('id_tim', [$id])->orderBy('nopunggung', 'asc')->get();
         $coach = official::whereIn('id_tim', [$id])->whereIn('posisi', ['Pelatih'])->get();
         $manager = official::whereIn('id_tim', [$id])->whereIn('posisi', ['Manager'])->get();
-        $tim = user::find($id); 
+        $tim = user::with("jersey")->find($id); 
         return view('admin.dsp',  compact('pemain','no', 'tim', 'coach', 'manager'));
     }
 
     public function total(){
-        $tim = user::with("peserta")->with("official")->get();                   
+        $tim = user::with("peserta")->with("official")->with("jersey")->get();                   
         return view('admin.dsptotal', compact('tim'));
     }
 }

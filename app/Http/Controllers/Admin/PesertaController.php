@@ -22,10 +22,10 @@ class PesertaController extends Controller
     }
 
     public function index(){
-        $putra = count(user::whereIn('jenis',  ['0'])->get());
-        $putri = count(user::whereIn('jenis',  ['1'])->get());
-        $putra2 = count(user::whereIn('jenis',  ['0'])->whereIn('finalisasi', ['1'])->get());
-        $putri2 = count(user::whereIn('jenis',  ['1'])->whereIn('finalisasi', ['1'])->get());
+        $putra = count(user::whereIn('jenis',  ['Putra'])->get());
+        $putri = count(user::whereIn('jenis',  ['Putri'])->get());
+        $putra2 = count(user::whereIn('jenis',  ['Putra'])->whereIn('finalisasi', ['1'])->get());
+        $putri2 = count(user::whereIn('jenis',  ['Putri'])->whereIn('finalisasi', ['1'])->get());
         $user = user::with("fileberkas")->get();
         $no = 1;
         return view('admin.peserta', compact('user', 'no', 'putra', 'putri', 'putri2', 'putra2'));

@@ -1164,7 +1164,11 @@ line-height:150%'><span class=SpellE>Pelatih</span><span style='mso-tab-count:
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
 line-height:150%'><span class=SpellE>Warna</span> <span class=SpellE>Kaos</span>
-<span class=GramE>Tim :</span> ___________________________________</p>
+<span class=GramE>Tim :</span> 
+@foreach ($item->jersey as $item2)
+{{$item2->jersey}}-{{$item2->celana}}, {{$item2->kaoskaki}}
+@endforeach
+</p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
 

@@ -1149,7 +1149,11 @@ class=SpellE>Pelatih</span><span style='mso-tab-count:2'>           �
 <p><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify'><span
-class=SpellE>Warna</span> <span class=SpellE>Kaos</span> Tim: ___________________________________<o:p></o:p></p>
+class=SpellE>Warna</span> <span class=SpellE>Kaos</span> Tim: 
+@foreach ($tim->jersey as $item)
+{{$item->jersey}}-{{$item->celana}}, {{$item->kaoskaki}}
+@endforeach
+<o:p></o:p></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
 

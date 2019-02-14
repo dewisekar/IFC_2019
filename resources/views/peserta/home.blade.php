@@ -53,9 +53,9 @@
                 </div>                            
             @endif
             @include('peserta.layouts.alert')
-            <div class="row">
+            <div class="row form-example-wrap">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-example-wrap ">
+                    <div class="form-example-wrap">
                         <div class="cmp-tb-hd">
                             <h2>Persyaratan Yang Harus Dilengkapi</h2>
                             <p>Offline</p>
@@ -64,10 +64,10 @@
                                     <li><p>Menyerahkan Form Pendaftaran C1, C2, C4. Form bisa diunduh di bawah.</p></li>
                                     <li><p>Foto Pemain (4x6) 2 Lembar berwarna terbaru dengan dresscode sama 1 tim (Eg: Menggunakan jersey lama tim).</p></li>
                                     <li><p>Video Teaser Per Departemen.</p></li>
-                                    <li><p>Berkas-berkas selain video teaser dikumpulkan saat technical meeting tanggal 4 Maret 2019.</p></li>
+                                    <li><p>Berkas-berkas selain video teaser dikumpulkan saat technical meeting maksimal tanggal 3 Maret 2019.</p></li>
                                 </ol>
                             </div>
-                            <small> Persyaratan offline dikumpulkan maksimal pada tanggal ... di Sekretariat UKM Sepakbola ITS</small>
+                            <small> Persyaratan offline dikumpulkan maksimal tanggal 3 Maret 2019 di Sekretariat UKM Sepakbola ITS</small>
                             
                             <p class="mg-t-10">Online</p>
                             <div class="col-md-12">
