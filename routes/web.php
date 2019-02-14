@@ -35,6 +35,7 @@ Route::post('/editpemain/{id}', 'PemainController@edit')->name('pemain.edit');
 Route::post('/editofficial/{id}', 'OfficialController@edit')->name('official.edit');
 Route::post('/deletepemain/{id}', 'PemainController@delete')->name('delete.pemain');
 Route::post('/deleteofficial/{id}', 'OfficialController@delete')->name('delete.official');
+Route::get('/form', 'FileController@dsp');
 
 Route::prefix('admin')->group(function () 
 {

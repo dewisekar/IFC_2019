@@ -43,4 +43,9 @@ class FileController extends Controller
         $fileberkas->delete();
         return redirect('/home')->with('success', 'Berkas Berhasil Dihapus');
     }
+
+    public function dsp(){
+        $path = "files/[2019] Form Kontrak.docx";
+        return response()->download($path);
+    }
 }

@@ -68,6 +68,11 @@
             </li>
             <li class="nav-item ml-auto">
                 <div class="btn-group btn-group-sm mr-10">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='../admin/viewdsp'">
+                        <i class="fa fa-download"> </i> Download DSP
+                    </button>
+                </div>
+                <div class="btn-group btn-group-sm mr-15">
                     <button type="button" class="btn btn-primary" onclick="window.location.href='../admin/downloadpemain'">
                         <i class="fa fa-download"> </i> Download Data Pemain & Official
                     </button>

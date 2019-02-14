@@ -103,21 +103,11 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Form C1</td>
-                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Form C2</td>
-                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Form C4</td>
-                                        <td><button data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
+                                        <td>Form Kontrak C1 & C2</td>
+                                        <td><button onclick="window.location.href='../form'" data-toggle="tooltip" data-placement="left" title="Download Form" class="btn notika-btn-teal"><i class="notika-icon notika-sent" style="color:white"></i></button></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table> 
                         </div>
                     </div>
                 </div>
@@ -611,7 +601,7 @@
             @if (Auth::user()->finalisasi==0)
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-example-wrap mg-t-30 text-center">
+                    <div class="mg-t-30 text-center">
                         <div class="cmp-tb-hd">
                             <h2>Finalisasi Berkas</h2>
                             <form action="/finalisasi" method="POST">

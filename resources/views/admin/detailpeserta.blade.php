@@ -120,6 +120,9 @@
                         <button type="button" class="btn btn-outline-info mr-5 mb-20" onclick="window.location.href='../downloaddetailpemain/{{$tim->id}}'">
                             <i class="fa fa-download mr-5"></i>Download Data Pemain & Official
                         </button>
+                        <button type="button" class="btn btn-outline-info mr-5 mb-20" onclick="window.location.href='../viewdsp/{{$tim->id}}'">
+                            <i class="fa fa-download mr-5"></i>Download DSP
+                        </button>
                     </div>
                 </div>
             </div>

@@ -923,7 +923,7 @@ line-height:150%'><span class=SpellE><span class=GramE>Pertandingan</span></span
 class=GramE> :</span></p>
 
 <p class=s2 style='margin:0in;margin-bottom:.0001pt;text-align:justify;
-line-height:150%'>Nama <span class=GramE>Tim :</span></p>
+line-height:150%'>Nama <span class=GramE>Tim :</span> {{$item->name}} - {{$item->jenis}}</p>
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100%;border-collapse:collapse;mso-yfti-tbllook:1184;
