@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\FileBerkas;
 use Auth;
 use Storage;
+use DB;
+use Carbon\Carbon;
+
 
 class FileController extends Controller
 {
@@ -19,15 +22,24 @@ class FileController extends Controller
         $this->validate($request, [
             'file' => 'required|mimes:zip|max:30000', // max 30MB
         ]);
+        
         $uploadedFile = $request->file('file');
         $originalname = $request->file('file')->getClientOriginalName();
         $path = $uploadedFile->store('public/files');
 
-        $fileberkas = new FileBerkas;
-        $fileberkas->id_tim = $id;
-        $fileberkas->title = $originalname;
-        $fileberkas->filename = $path;
-        $fileberkas->save();
+        DB::BeginTransaction();
+        try {
+            $fileberkas = new FileBerkas;
+            $fileberkas->id_tim = $id;
+            $fileberkas->title = $originalname;
+            $fileberkas->filename = $path;
+            $fileberkas->created_at = Carbon::now();
+            $fileberkas->save();
+           
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();
+        } 
 
         return redirect('/home')->with('success', 'Berkas Berhasil Diunggah');
     }
@@ -40,7 +52,13 @@ class FileController extends Controller
     
     public function delete($id){
         $fileberkas = fileberkas::find($id);
-        $fileberkas->delete();
+        DB::BeginTransaction();
+        try {
+            $fileberkas->delete();
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();
+        }
         return redirect('/home')->with('success', 'Berkas Berhasil Dihapus');
     }
 

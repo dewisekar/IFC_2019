@@ -139,7 +139,7 @@
                                                 <div class="form-group">
                                                     <label>Nama Pemain</label>
                                                     <div class="nk-int-st">
-                                                        <input type="text" class="form-control input-sm" placeholder="Nama Pemain" name="p_nama">
+                                                        <input required type="text" class="form-control input-sm" placeholder="Nama Pemain" name="p_nama">
                                                     </div>
                                                 </div>
                                             </div>
@@ -147,7 +147,7 @@
                                                 <div class="form-group">
                                                     <label>NRP</label>
                                                     <div class="nk-int-st">
-                                                        <input type="text" class="form-control input-sm" placeholder="NRP" name="p_nrp">
+                                                        <input required type="text" class="form-control input-sm" placeholder="NRP" name="p_nrp">
                                                     </div>
                                                 </div>
                                             </div>
@@ -155,7 +155,7 @@
                                                 <div class="form-group">
                                                     <label>No. Punggung</label>
                                                     <div class="nk-int-st">
-                                                        <input type="number" class="form-control input-sm" min="1" max="99" placeholder="No. Punggung" name="p_nopung">
+                                                        <input required type="number" class="form-control input-sm" min="1" max="99" placeholder="No. Punggung" name="p_nopung">
                                                     </div>
                                                 </div>
                                             </div>
@@ -220,7 +220,7 @@
                                                                 <div class="form-group">
                                                                     <label>Nama Pemain</label>
                                                                     <div class="nk-int-st">
-                                                                        <input type="text" class="form-control input-sm" placeholder="Nama Pemain" name="p_nama" value="{{$item->nama}}">
+                                                                        <input required type="text" class="form-control input-sm" placeholder="Nama Pemain" name="p_nama" value="{{$item->nama}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -228,7 +228,7 @@
                                                                 <div class="form-group">
                                                                     <label>NRP</label>
                                                                     <div class="nk-int-st">
-                                                                        <input type="text" class="form-control input-sm" placeholder="NRP" name="p_nrp"  value="{{$item->nrp}}">
+                                                                        <input required type="text" class="form-control input-sm" placeholder="NRP" name="p_nrp"  value="{{$item->nrp}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -236,7 +236,7 @@
                                                                 <div class="form-group">
                                                                     <label>No. Punggung</label>
                                                                     <div class="nk-int-st">
-                                                                        <input type="number" class="form-control input-sm" min="1" max="99" placeholder="No. Punggung" name="p_nopung" value="{{$item->nopunggung}}">
+                                                                        <input required type="number" class="form-control input-sm" min="1" max="99" placeholder="No. Punggung" name="p_nopung" value="{{$item->nopunggung}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -327,7 +327,7 @@
                                                 <div class="form-group">
                                                     <label>Nama Official</label>
                                                     <div class="nk-int-st">
-                                                        <input type="text" class="form-control input-sm" placeholder="Nama Official" name="o_nama">
+                                                        <input required type="text" class="form-control input-sm" placeholder="Nama Official" name="o_nama">
                                                     </div>
                                                 </div>
                                             </div>
@@ -335,7 +335,7 @@
                                                 <div class="form-group">
                                                     <label>No. Identitas</label>
                                                     <div class="nk-int-st">
-                                                        <input type="text" class="form-control input-sm" placeholder="No. Identitas" name="o_noidentitas">
+                                                        <input required type="text" class="form-control input-sm" placeholder="No. Identitas" name="o_noidentitas">
                                                     </div>
                                                 </div>
                                             </div>
@@ -401,7 +401,7 @@
                                                                 <div class="form-group">
                                                                     <label>Nama Official</label>
                                                                     <div class="nk-int-st">
-                                                                        <input type="text" class="form-control input-sm" placeholder="Nama Official" name="o_nama" value="{{$item->nama}}">
+                                                                        <input required type="text" class="form-control input-sm" placeholder="Nama Official" name="o_nama" value="{{$item->nama}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -409,7 +409,7 @@
                                                                 <div class="form-group">
                                                                     <label>No. Identitas</label>
                                                                     <div class="nk-int-st">
-                                                                        <input type="text" class="form-control input-sm" placeholder="No. Identitas" name="o_noidentitas"  value="{{$item->noidentitas}}">
+                                                                        <input required type="text" class="form-control input-sm" placeholder="No. Identitas" name="o_noidentitas"  value="{{$item->noidentitas}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -506,7 +506,7 @@
                                 <div class="row">
                                     <div class="col-lg-5 col-md-3 col-sm-3 col-xs-12">
                                         <div class="form-group {{ !$errors->has('file') ?: 'has-error' }}">
-                                            <input type="file" name="file">
+                                            <input required type="file" name="file">
                                             <span class="help-block text-danger">{{ $errors->first('file') }}</span>
                                         </div>
                                         <div class="form-example-int">
@@ -532,7 +532,7 @@
                                     <div class="form-group">
                                         <label>Warna Jersey</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Jersey" name="w_jersey">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Jersey" name="w_jersey">
                                         </div>
                                     </div>
                                 </div>
@@ -540,7 +540,7 @@
                                     <div class="form-group">
                                         <label>Warna Celana</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Celana" name="w_celana">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Celana" name="w_celana">
                                         </div>
                                     </div>
                                 </div>
@@ -548,7 +548,7 @@
                                     <div class="form-group">
                                         <label>Warna Kaos Kaki</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Kaos Kaki" name="w_kaoskaki">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Kaos Kaki" name="w_kaoskaki">
                                         </div>
                                     </div>
                                 </div>
@@ -567,7 +567,7 @@
                                     <div class="form-group">
                                         <label>Warna Jersey</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Jersey" name="w_jersey" value="{{$jersey[0]->jersey}}">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Jersey" name="w_jersey" value="{{$jersey[0]->jersey}}">
                                         </div>
                                     </div>
                                 </div>
@@ -575,7 +575,7 @@
                                     <div class="form-group">
                                         <label>Warna Celana</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Celana" name="w_celana" value="{{$jersey[0]->celana}}">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Celana" name="w_celana" value="{{$jersey[0]->celana}}">
                                         </div>
                                     </div>
                                 </div>
@@ -583,7 +583,7 @@
                                     <div class="form-group">
                                         <label>Warna Kaos Kaki</label>
                                         <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Warna Kaos Kaki" name="w_kaoskaki" value="{{$jersey[0]->kaoskaki}}">
+                                            <input required type="text" class="form-control input-sm" placeholder="Warna Kaos Kaki" name="w_kaoskaki" value="{{$jersey[0]->kaoskaki}}">
                                         </div>
                                     </div>
                                 </div>
@@ -608,13 +608,13 @@
                             @csrf
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="fm-checkbox">
-                                    <label><input type="checkbox" class="i-checks" name="final"> <i></i> Dengan ini kami menyatakan bahwa data yang diisikan dalam formulir di atas merupakan benar dan segala resiko yang berkaitan dengan ketidakvalidan data akan ditanggung oleh tim masing-masing.</label>
-                                    <small> Setelah data terfinalisasi maka tim tidak dapat mengubah data yang telah diinputkan dan pastikan anda telah menginput semua data yang diminta. </small>
+                                    <label><input required type="checkbox" class="i-checks" name="final"> <i></i> Dengan ini kami menyatakan bahwa data yang diisikan dalam formulir di atas merupakan benar dan segala resiko yang berkaitan dengan ketidakvalidan data akan ditanggung oleh tim masing-masing.</label>
+                                    <small> Setelah data terfinalisasi maka tim tidak dapat mengubah data yang telah diinputkan dan pastikan anda telah menginput required semua data yang diminta. </small>
                                 </div>
-                                <input type="hidden" name="jumpes" value="{{$jumpes}}">
-                                <input type="hidden" name="jumof" value="{{$jumof}}">
-                                <input type="hidden" name="jumfile" value="{{$jumfile}}">
-                                <input type="hidden" name="jumjes" value="{{$jumjes}}">
+                                <input required type="hidden" name="jumpes" value="{{$jumpes}}">
+                                <input required type="hidden" name="jumof" value="{{$jumof}}">
+                                <input required type="hidden" name="jumfile" value="{{$jumfile}}">
+                                <input required type="hidden" name="jumjes" value="{{$jumjes}}">
                                 <div class="form-example-int mg-t-15">
                                     <button class="btn btn-success notika-btn-success" type="submit">Finalisasi</button>
                                 </div>

@@ -61,7 +61,7 @@
                                             <div class="form-group row">
                                                 <div class="col-12">
                                                     <label for="login-username">Username</label>
-                                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                                    <input id="email" type="text" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
                                                     @if ($errors->has('email'))
                                                         <span class="help-block">
                                                             <strong>{{ $errors->first('email') }}</strong>

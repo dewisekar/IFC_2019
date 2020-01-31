@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Auth;
+use DB;
 
 class GantiPasswordController extends Controller
 {
@@ -27,8 +28,14 @@ class GantiPasswordController extends Controller
             return redirect('../gantipassword')->with('danger', 'Password baru tidak bisa sama dengan password lama!'); 
         }
         if(Hash::check($request->oldpass, Auth::user()->password) ){
-            Auth::user()->password = Hash::make($request->newpass);
-            Auth::user()->save();
+            DB::BeginTransaction();
+            try {
+                Auth::user()->password = Hash::make($request->newpass);
+                Auth::user()->save();                
+                DB::commit();            
+            } catch (Exception $e) {
+                DB::rollback();
+            }
             return redirect('../gantipassword')->with('success', 'Password berhasil diubah!');  
         }
         else{

@@ -156,6 +156,7 @@
                         <th class="d-sm-table-cell" style="width: 15%;">Pa/Pi</th>
                         <th class="d-none d-sm-table-cell" style="width: 10%;">Status Finalisasi</th>
                         <th class="d-none d-sm-table-cell">Berkas</th>
+                        <th class="text-center" style="width: 15%;">Waktu Daftar</th>
                         <th class="text-center" style="width: 15%;">Action</th>
                     </tr>
                 </thead>
@@ -180,6 +181,7 @@
                                 <a href="{{url('../admin/downloadberkas/'.$item2->id_berkas)}}">{{$item2->title}}</a>
                             @endforeach  
                         </td>
+                        <td class="d-none d-sm-table-cell">{{$item->created_at}} </td>
                         <td class="text-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" title="Hapus" data-target="#modal-delete{{$item->id}}">

@@ -127,11 +127,7 @@
                                 <li>
                                     <a class="nav-submenu" href="../admin/peserta"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Peserta</span></a>
                                     <a class="nav-submenu" href="../admin/jersey"><i class="si si-people"></i><span class="sidebar-mini-hide">Daftar Jersey Peserta</span></a>
-                                </li>
-                                <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Kelola Jadwal dan Hasil Pertandingan</span></li>
-                                <li>
-                                    <a class="nav-submenu" href="../admin/jadwal"><i class="si si-calendar"></i><span class="sidebar-mini-hide">Manajemen Jadwal dan Hasil Pertandingan</span></a>
-                                </li>                           
+                                </li>                         
                             </ul>
                         </div>
                         <!-- END Side Navigation -->

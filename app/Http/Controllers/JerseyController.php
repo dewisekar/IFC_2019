@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Jersey;
+use Carbon\Carbon;
+use DB;
 
 class JerseyController extends Controller
 {
@@ -20,12 +22,20 @@ class JerseyController extends Controller
             'w_celana' => 'required|string',
             'w_kaoskaki' => 'required|string',
         ]);
-        $jersey = new Jersey;
-        $jersey->id_tim = $id;
-        $jersey->jersey = $request->w_jersey;
-        $jersey->celana = $request->w_celana;
-        $jersey->kaoskaki = $request->w_kaoskaki;
-        $jersey->save();
+        DB::BeginTransaction();
+        try {
+            $jersey = new Jersey;
+            $jersey->id_tim = $id;
+            $jersey->jersey = $request->w_jersey;
+            $jersey->celana = $request->w_celana;
+            $jersey->kaoskaki = $request->w_kaoskaki;
+            $jersey->created_at = Carbon::now();
+            $jersey->save();
+            
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();
+        }
     
         return redirect('/home')->with('success', 'Warna Jersey Berhasil Diubah');
     }
@@ -37,10 +47,18 @@ class JerseyController extends Controller
             'w_kaoskaki' => 'required|string',
         ]);
         $jersey = jersey::find($id);
-        $jersey->jersey = $request->w_jersey;
-        $jersey->celana = $request->w_celana;
-        $jersey->kaoskaki = $request->w_kaoskaki;
-        $jersey->save();
+        DB::BeginTransaction();
+        try {
+            $jersey->jersey = $request->w_jersey;
+            $jersey->celana = $request->w_celana;
+            $jersey->kaoskaki = $request->w_kaoskaki;
+            $jersey->updated_at = Carbon::now();
+            $jersey->save();
+            
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();
+        }
         return redirect('/home')->with('success', 'Warna Jersey Berhasil Diubah');
     }
 }

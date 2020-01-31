@@ -13,6 +13,7 @@ use App\Exports\OfficialExport;
 use App\Exports\TimExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Storage;
+use DB;
 
 class PesertaController extends Controller
 {
@@ -34,25 +35,38 @@ class PesertaController extends Controller
     public function create(Request $request){
         $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
             'jenis' => ['required',],
         ]);
 
-        $user = new User;
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = Hash::make($request->password);
-        $user->jenis = $request->jenis;
-        $user->save();
+        DB::BeginTransaction();
+        try {
+            $user = new User;
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+            $user->jenis = $request->jenis;
+            $user->save();
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();        }
 
-        return redirect('../admin/peserta')->with('success', 'Tim Berhasil Ditambahkan');
+        
+        return redirect('/admin/peserta')->with('success', 'Tim Berhasil Ditambahkan');
     }
 
     public function delete($id){
         $user = user::find($id);
-        $user->delete();
-        return redirect('../admin/peserta')->with('success', 'Tim Berhasil Dihapus');
+        DB::BeginTransaction();
+        try {
+            $user->delete();
+            DB::commit();            
+        } catch (Exception $e) {
+            DB::rollback();
+        }
+        
+        return redirect('/admin/peserta')->with('success', 'Tim Berhasil Dihapus');
     }
 
     public function downloadfile($id)

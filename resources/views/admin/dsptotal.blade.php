@@ -1046,7 +1046,8 @@ line-height:150%'>Nama <span class=GramE>Tim :</span> {{$item->name}} - {{$item-
         none;mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt;
         height:20.0pt'>
         <p class=s3 align=center style='margin:0in;margin-bottom:.0001pt;text-align:
-        left;line-height:13.0pt;padding-left: 2px'>{{$item2->nama}}</p>
+        left;line-height:13.0pt;padding-left: 2px'>{{ucwords(strtolower(trans($item2->nama)))}}
+</p>
         </td>
         <td width="4%" style='width:4.08%;border:solid windowtext 1.0pt;border-left:
         none;mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt;
